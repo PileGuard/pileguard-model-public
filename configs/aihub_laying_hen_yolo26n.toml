@@ -1,0 +1,29 @@
+[data]
+dataset_path = "extracted/aihub_laying_hen_v1"
+dataset_summary = "artifacts/aihub-laying-hen-dataset/summary.json"
+train_split = "train"
+validation_split = "val"
+class_names = ["layer-chicken"]
+
+[model]
+architecture = "yolo26n.yaml"
+initialization_weights = "weights/pio-yolo26n/best.pt"
+
+[training]
+epochs = 5
+image_size = 480
+batch_size = 4
+workers = 0
+patience = 3
+seed = 2026
+device = "auto"
+max_detections = 500
+close_mosaic = 3
+optimizer = "AdamW"
+learning_rate = 0.001
+weight_decay = 0.0005
+
+[output]
+run_root = "outputs/aihub-laying-hen-yolo26n"
+artifact_dir = "artifacts/aihub-laying-hen-yolo26n"
+checkpoint_dir = "weights/aihub-laying-hen-yolo26n"

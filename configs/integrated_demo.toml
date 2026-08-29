@@ -1,0 +1,23 @@
+[input]
+feature_csv = "artifacts/nestler-features/frame_features.csv"
+nestler_config = "configs/nestler_features.toml"
+fresh_feature_dir = "outputs/integrated-demo/nestler-features"
+
+[calibration]
+frames = 60
+minimum_samples = 20
+minimum_scale_ratio = 0.05
+saturation_iqr = 3.0
+
+[quality]
+minimum_valid_evidence = 4
+
+[risk]
+smoothing_alpha = 0.12
+watch_threshold = 40.0
+warning_threshold = 60.0
+critical_threshold = 80.0
+release_margin = 5.0
+
+[output]
+artifact_dir = "artifacts/integrated-demo"

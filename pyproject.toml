@@ -1,0 +1,71 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pileguard-model"
+version = "0.1.0"
+description = "Piling detection and temporal risk feature pipeline for laying hens"
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+dependencies = []
+
+[project.optional-dependencies]
+train = [
+  "matplotlib==3.11.1",
+  "numpy==2.5.2",
+  "pandas==3.0.5",
+  "pillow==12.3.0",
+  "scikit-learn==1.9.0",
+  "torch==2.13.0",
+  "torchvision==0.28.0",
+  "tqdm==4.70.0",
+]
+video = [
+  "opencv-python-headless==5.0.0.93",
+]
+detection = [
+  "ultralytics==8.4.115",
+]
+dev = [
+  "pytest==9.1.1",
+  "ruff==0.16.4",
+]
+
+[project.scripts]
+pileguard-evaluate-aihub-domestic = "pileguard.evaluation.aihub_domestic:main"
+pileguard-audit-aihub-finetuned = "pileguard.evaluation.aihub_error_audit:main"
+pileguard-prepare-aihub-detection = "pileguard.data.aihub_detection:main"
+pileguard-audit-domestic-data = "pileguard.data.domestic:main"
+pileguard-check-data = "pileguard.data_inventory:main"
+pileguard-prepare-nestler-detection = "pileguard.data.nestler_detection:main"
+pileguard-evaluate-msu = "pileguard.evaluation.msu:main"
+pileguard-evaluate-nestler-transfer = "pileguard.evaluation.nestler_transfer:main"
+pileguard-evaluate-nestler-test = "pileguard.evaluation.nestler_yolo:main"
+pileguard-audit-nestler-validation = "pileguard.evaluation.nestler_validation:main"
+pileguard-evaluate-pio = "pileguard.evaluation.pio_yolo:main"
+pileguard-extract-nestler = "pileguard.features.nestler:main"
+pileguard-extract-pio = "pileguard.features.pio:main"
+pileguard-extract-pio-predicted = "pileguard.features.pio_predicted:main"
+pileguard-run-demo = "pileguard.demo.integrated:main"
+pileguard-run-video-risk = "pileguard.demo.video_risk:main"
+pileguard-simulate-risk = "pileguard.demo.digital_twin:main"
+pileguard-train-msu = "pileguard.training.msu:main"
+pileguard-train-aihub = "pileguard.training.aihub_yolo:main"
+pileguard-train-nestler = "pileguard.training.nestler_yolo:main"
+pileguard-train-nestler-balanced = "pileguard.training.nestler_balanced:main"
+pileguard-train-pio = "pileguard.training.pio_yolo:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]

@@ -1,0 +1,124 @@
+{
+  "disclaimer": "Synthetic demonstration index only. Timing, domestic frequency, and predictive performance are assumptions and are not validated on farm incidents.",
+  "risk_index_is_probability": false,
+  "simulation": {
+    "duration_seconds": 180,
+    "step_seconds": 1,
+    "seed": 2026
+  },
+  "risk": {
+    "smoothing_alpha": 0.18,
+    "watch_threshold": 40.0,
+    "warning_threshold": 60.0,
+    "critical_threshold": 80.0,
+    "release_margin": 5.0
+  },
+  "scenarios": {
+    "social_attraction": {
+      "display_name": "Social attraction",
+      "observed_share_percent": [
+        62.6
+      ],
+      "description": "Sustained inflow toward a corner or active bird raises density and lowers distance.",
+      "maximum_risk_index": 93.75964416831202,
+      "first_alert_seconds": {
+        "watch": 79.0,
+        "warning": 95.0,
+        "critical": 115.0
+      },
+      "alert_transitions": [
+        {
+          "timestamp_seconds": 0.0,
+          "alert_state": "normal",
+          "risk_index": 8.35340724869965
+        },
+        {
+          "timestamp_seconds": 79.0,
+          "alert_state": "watch",
+          "risk_index": 41.122079739232
+        },
+        {
+          "timestamp_seconds": 95.0,
+          "alert_state": "warning",
+          "risk_index": 61.30552505944673
+        },
+        {
+          "timestamp_seconds": 115.0,
+          "alert_state": "critical",
+          "risk_index": 80.72177455763781
+        }
+      ]
+    },
+    "group_convergence": {
+      "display_name": "Group movement convergence",
+      "observed_share_percent": [
+        23.8
+      ],
+      "description": "Coherent one-way movement converges through a bottleneck into high density.",
+      "maximum_risk_index": 88.32577668534199,
+      "first_alert_seconds": {
+        "watch": 71.0,
+        "warning": 87.0,
+        "critical": 111.0
+      },
+      "alert_transitions": [
+        {
+          "timestamp_seconds": 0.0,
+          "alert_state": "normal",
+          "risk_index": 8.49696585248146
+        },
+        {
+          "timestamp_seconds": 71.0,
+          "alert_state": "watch",
+          "risk_index": 40.201748809515905
+        },
+        {
+          "timestamp_seconds": 87.0,
+          "alert_state": "warning",
+          "risk_index": 60.38770025753063
+        },
+        {
+          "timestamp_seconds": 111.0,
+          "alert_state": "critical",
+          "risk_index": 80.44059489592979
+        }
+      ]
+    },
+    "external_context": {
+      "display_name": "Worker following / out-of-view",
+      "observed_share_percent": [
+        2.1,
+        10.8
+      ],
+      "description": "Door or blind-spot context precedes cornerward inflow and local density growth.",
+      "maximum_risk_index": 91.2011950686048,
+      "first_alert_seconds": {
+        "watch": 47.0,
+        "warning": 89.0,
+        "critical": 122.0
+      },
+      "alert_transitions": [
+        {
+          "timestamp_seconds": 0.0,
+          "alert_state": "normal",
+          "risk_index": 7.548130110115481
+        },
+        {
+          "timestamp_seconds": 47.0,
+          "alert_state": "watch",
+          "risk_index": 40.21768377336913
+        },
+        {
+          "timestamp_seconds": 89.0,
+          "alert_state": "warning",
+          "risk_index": 60.27367678345818
+        },
+        {
+          "timestamp_seconds": 122.0,
+          "alert_state": "critical",
+          "risk_index": 80.22544792421327
+        }
+      ]
+    }
+  }
+}

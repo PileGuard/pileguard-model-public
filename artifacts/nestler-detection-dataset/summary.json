@@ -1,0 +1,125 @@
+{
+  "source": "official NESTLER dataset",
+  "label_semantics": "NESTLER pose/skeleton tracker regions; these are not interchangeable with PIO whole-chicken boxes",
+  "class_name": "nestler_tracker_region",
+  "split_unit": "complete job/clip",
+  "frame_leakage_between_splits": false,
+  "missing_bbox_policy": "exclude frame; never convert missing annotation to empty label",
+  "independent_test_use": "reserved; do not use for threshold selection or early stopping",
+  "job_assignment": {
+    "job_000004": "train",
+    "job_000007": "val",
+    "job_000008": "test",
+    "job_000009": "train",
+    "job_000010": "val",
+    "job_000011": "test"
+  },
+  "splits": {
+    "train": {
+      "jobs": [
+        "job_000004",
+        "job_000009"
+      ],
+      "sites": {
+        "Bulgaria": 1,
+        "Rwanda": 1
+      },
+      "annotated_frames": 757,
+      "missing_annotation_frames": 35,
+      "empty_annotated_frames": 0,
+      "boxes": 8002
+    },
+    "val": {
+      "jobs": [
+        "job_000007",
+        "job_000010"
+      ],
+      "sites": {
+        "Bulgaria": 1,
+        "Rwanda": 1
+      },
+      "annotated_frames": 798,
+      "missing_annotation_frames": 2,
+      "empty_annotated_frames": 1,
+      "boxes": 6985
+    },
+    "test": {
+      "jobs": [
+        "job_000008",
+        "job_000011"
+      ],
+      "sites": {
+        "Bulgaria": 1,
+        "Rwanda": 1
+      },
+      "annotated_frames": 754,
+      "missing_annotation_frames": 46,
+      "empty_annotated_frames": 1,
+      "boxes": 4874
+    }
+  },
+  "jobs": [
+    {
+      "job_id": "job_000004",
+      "site": "Bulgaria",
+      "split": "train",
+      "annotated_frames": 400,
+      "missing_annotation_frames": 0,
+      "empty_annotated_frames": 0,
+      "boxes": 5981
+    },
+    {
+      "job_id": "job_000007",
+      "site": "Bulgaria",
+      "split": "val",
+      "annotated_frames": 400,
+      "missing_annotation_frames": 0,
+      "empty_annotated_frames": 0,
+      "boxes": 4133
+    },
+    {
+      "job_id": "job_000008",
+      "site": "Bulgaria",
+      "split": "test",
+      "annotated_frames": 354,
+      "missing_annotation_frames": 46,
+      "empty_annotated_frames": 1,
+      "boxes": 842
+    },
+    {
+      "job_id": "job_000009",
+      "site": "Rwanda",
+      "split": "train",
+      "annotated_frames": 357,
+      "missing_annotation_frames": 35,
+      "empty_annotated_frames": 0,
+      "boxes": 2021
+    },
+    {
+      "job_id": "job_000010",
+      "site": "Rwanda",
+      "split": "val",
+      "annotated_frames": 398,
+      "missing_annotation_frames": 2,
+      "empty_annotated_frames": 1,
+      "boxes": 2852
+    },
+    {
+      "job_id": "job_000011",
+      "site": "Rwanda",
+      "split": "test",
+      "annotated_frames": 400,
+      "missing_annotation_frames": 0,
+      "empty_annotated_frames": 0,
+      "boxes": 4032
+    }
+  ],
+  "limitations": [
+    "Each split contains only one Bulgaria clip and one Rwanda clip.",
+    "Tracking regions have different semantics from PIO whole-chicken boxes.",
+    "This dataset has no piling-event labels and cannot validate incident prediction.",
+    "Domestic Korean farm validation data is not available."
+  ],
+  "image_width": 960,
+  "jpeg_quality": 90
+}

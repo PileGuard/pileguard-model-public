@@ -1,0 +1,33 @@
+{
+  "status": "validation-selected fine-tune",
+  "architecture": "yolo26n.yaml",
+  "initialization": "PIO YOLO26n checkpoint",
+  "class_name": "layer-chicken",
+  "dataset": {
+    "train_images": 35548,
+    "validation_images": 4538,
+    "audited_train_images": 36423,
+    "audited_validation_images": 4546
+  },
+  "epochs": 1,
+  "image_size": 480,
+  "batch_size": 16,
+  "device": "mps",
+  "optimizer_requested": "AdamW",
+  "optimizer_selected": "AdamW",
+  "elapsed_seconds": 3344.3631799169816,
+  "validation_metrics": {
+    "precision": 0.7736013850432305,
+    "recall": 0.7047510136188793,
+    "map50": 0.8016879553275306,
+    "map50_95": 0.5136296648491687,
+    "fitness": 0.5136296648491687
+  },
+  "evidence_files": [
+    "results.csv",
+    "results.png",
+    "labels.jpg"
+  ],
+  "checkpoint": "weights/aihub-laying-hen-yolo26n/best.pt",
+  "claim_boundary": "Validation metrics measure static Korean laying-hen object detection only. The dataset has no continuous piling/smothering incident timing, and this Validation split is not an independent field-farm test."
+}

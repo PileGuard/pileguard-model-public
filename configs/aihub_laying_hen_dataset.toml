@@ -1,0 +1,6 @@
+[input]
+raw_dataset_path = "raw/aihub_laying_hen_v1"
+
+[output]
+dataset_path = "extracted/aihub_laying_hen_v1"
+summary_path = "artifacts/aihub-laying-hen-dataset/summary.json"

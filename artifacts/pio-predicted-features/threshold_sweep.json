@@ -1,0 +1,45 @@
+{
+  "stage": "320px fixed-threshold baseline calibration",
+  "split": "val",
+  "selection_objective": "minimum object-count MAE among tested confidence thresholds",
+  "selected_confidence_threshold": 0.15,
+  "superseded_by": "resolution_threshold_sweep.json",
+  "candidate_results": [
+    {
+      "confidence_threshold": 0.05,
+      "object_count_mae": 79.04424778761062,
+      "object_count_bias": 73.04867256637168,
+      "object_count_pearson_correlation": 0.9467687607513389,
+      "bbox_area_ratio_mae": 0.29388165942449535
+    },
+    {
+      "confidence_threshold": 0.1,
+      "object_count_mae": 41.27654867256637,
+      "object_count_bias": 19.325221238938052,
+      "object_count_pearson_correlation": 0.9307974195758734,
+      "bbox_area_ratio_mae": 0.1717384758143081
+    },
+    {
+      "confidence_threshold": 0.125,
+      "object_count_mae": 35.50221238938053,
+      "object_count_bias": 2.103982300884956,
+      "object_count_pearson_correlation": 0.9233918660928828,
+      "bbox_area_ratio_mae": 0.13432509426783545
+    },
+    {
+      "confidence_threshold": 0.15,
+      "object_count_mae": 34.83185840707964,
+      "object_count_bias": -11.61504424778761,
+      "object_count_pearson_correlation": 0.9153187702149126,
+      "bbox_area_ratio_mae": 0.10760679919193346
+    },
+    {
+      "confidence_threshold": 0.25,
+      "object_count_mae": 56.41814159292036,
+      "object_count_bias": -54.29867256637168,
+      "object_count_pearson_correlation": 0.875770086192696,
+      "bbox_area_ratio_mae": 0.06861346781406706
+    }
+  ],
+  "evaluation_note": "The threshold was selected and summarized on the same PIO validation split. These values are descriptive calibration results, not an unbiased held-out test estimate."
+}

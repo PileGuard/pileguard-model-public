@@ -1,0 +1,414 @@
+{
+  "source_detector": "PIO YOLO26n overseas broiler baseline",
+  "checkpoint": "weights/pio-yolo26n/best.pt",
+  "image_size": 480,
+  "iou_threshold": 0.5,
+  "center_distance_threshold": 0.05,
+  "selected_confidence_threshold": 0.05,
+  "threshold_selection_split": "same NESTLER clips reported below",
+  "threshold_results": {
+    "0.05": {
+      "frame_count": 2392,
+      "annotated_frame_count": 2309,
+      "annotation_coverage": 0.9653010033444817,
+      "frames_without_predictions": 371,
+      "reference_boxes": 19861,
+      "predicted_boxes_on_annotated_frames": 20350,
+      "matching_metrics": {
+        "iou": {
+          "true_positives": 87,
+          "false_positives": 20263,
+          "false_negatives": 19774,
+          "precision": 0.004275184275184275,
+          "recall": 0.004380444086400483,
+          "f1": 0.004327174156325384
+        },
+        "center": {
+          "true_positives": 2891,
+          "false_positives": 17459,
+          "false_negatives": 16970,
+          "precision": 0.14206388206388207,
+          "recall": 0.14556165349176778,
+          "f1": 0.14379149983835268
+        }
+      },
+      "count_mae": 8.271546123863144,
+      "count_rmse": 9.713545524278477,
+      "count_bias": 0.21177999133824166,
+      "count_pearson_correlation": -0.38974619135069216
+    },
+    "0.1": {
+      "frame_count": 2392,
+      "annotated_frame_count": 2309,
+      "annotation_coverage": 0.9653010033444817,
+      "frames_without_predictions": 775,
+      "reference_boxes": 19861,
+      "predicted_boxes_on_annotated_frames": 7833,
+      "matching_metrics": {
+        "iou": {
+          "true_positives": 37,
+          "false_positives": 7796,
+          "false_negatives": 19824,
+          "precision": 0.004723605259798289,
+          "recall": 0.0018629474850208952,
+          "f1": 0.002672058929732072
+        },
+        "center": {
+          "true_positives": 1541,
+          "false_positives": 6292,
+          "false_negatives": 18320,
+          "precision": 0.19673177582024767,
+          "recall": 0.07758924525451891,
+          "f1": 0.11128764353289522
+        }
+      },
+      "count_mae": 5.986141186660892,
+      "count_rmse": 7.974461184451901,
+      "count_bias": -5.209181463837159,
+      "count_pearson_correlation": -0.06889732583398651
+    },
+    "0.15": {
+      "frame_count": 2392,
+      "annotated_frame_count": 2309,
+      "annotation_coverage": 0.9653010033444817,
+      "frames_without_predictions": 1004,
+      "reference_boxes": 19861,
+      "predicted_boxes_on_annotated_frames": 4560,
+      "matching_metrics": {
+        "iou": {
+          "true_positives": 23,
+          "false_positives": 4537,
+          "false_negatives": 19838,
+          "precision": 0.005043859649122807,
+          "recall": 0.0011580484366346105,
+          "f1": 0.0018836247491912698
+        },
+        "center": {
+          "true_positives": 1027,
+          "false_positives": 3533,
+          "false_negatives": 18834,
+          "precision": 0.22521929824561404,
+          "recall": 0.05170938019233674,
+          "f1": 0.08410793988780149
+        }
+      },
+      "count_mae": 6.729753139887397,
+      "count_rmse": 8.321365738923838,
+      "count_bias": -6.626678215677782,
+      "count_pearson_correlation": 0.007009702410964743
+    },
+    "0.25": {
+      "frame_count": 2392,
+      "annotated_frame_count": 2309,
+      "annotation_coverage": 0.9653010033444817,
+      "frames_without_predictions": 1281,
+      "reference_boxes": 19861,
+      "predicted_boxes_on_annotated_frames": 2220,
+      "matching_metrics": {
+        "iou": {
+          "true_positives": 10,
+          "false_positives": 2210,
+          "false_negatives": 19851,
+          "precision": 0.0045045045045045045,
+          "recall": 0.0005034993202759176,
+          "f1": 0.0009057560798876861
+        },
+        "center": {
+          "true_positives": 363,
+          "false_positives": 1857,
+          "false_negatives": 19498,
+          "precision": 0.1635135135135135,
+          "recall": 0.01827702532601581,
+          "f1": 0.03287894569992301
+        }
+      },
+      "count_mae": 7.641836292767432,
+      "count_rmse": 8.865800882736671,
+      "count_bias": -7.640103941100043,
+      "count_pearson_correlation": 0.009453739689024522
+    }
+  },
+  "selected_result": {
+    "frame_count": 2392,
+    "annotated_frame_count": 2309,
+    "annotation_coverage": 0.9653010033444817,
+    "frames_without_predictions": 371,
+    "reference_boxes": 19861,
+    "predicted_boxes_on_annotated_frames": 20350,
+    "matching_metrics": {
+      "iou": {
+        "true_positives": 87,
+        "false_positives": 20263,
+        "false_negatives": 19774,
+        "precision": 0.004275184275184275,
+        "recall": 0.004380444086400483,
+        "f1": 0.004327174156325384
+      },
+      "center": {
+        "true_positives": 2891,
+        "false_positives": 17459,
+        "false_negatives": 16970,
+        "precision": 0.14206388206388207,
+        "recall": 0.14556165349176778,
+        "f1": 0.14379149983835268
+      }
+    },
+    "count_mae": 8.271546123863144,
+    "count_rmse": 9.713545524278477,
+    "count_bias": 0.21177999133824166,
+    "count_pearson_correlation": -0.38974619135069216,
+    "jobs": {
+      "job_000004": {
+        "frame_count": 400,
+        "annotated_frame_count": 400,
+        "annotation_coverage": 1.0,
+        "frames_without_predictions": 248,
+        "reference_boxes": 5981,
+        "predicted_boxes_on_annotated_frames": 463,
+        "matching_metrics": {
+          "iou": {
+            "true_positives": 18,
+            "false_positives": 445,
+            "false_negatives": 5963,
+            "precision": 0.038876889848812095,
+            "recall": 0.0030095301788998496,
+            "f1": 0.00558659217877095
+          },
+          "center": {
+            "true_positives": 176,
+            "false_positives": 287,
+            "false_negatives": 5805,
+            "precision": 0.3801295896328294,
+            "recall": 0.02942651730479853,
+            "f1": 0.054624456859093735
+          }
+        },
+        "count_mae": 13.795,
+        "count_rmse": 13.968715044698993,
+        "count_bias": -13.795,
+        "count_pearson_correlation": 0.5280660906068012
+      },
+      "job_000007": {
+        "frame_count": 400,
+        "annotated_frame_count": 400,
+        "annotation_coverage": 1.0,
+        "frames_without_predictions": 123,
+        "reference_boxes": 4133,
+        "predicted_boxes_on_annotated_frames": 1039,
+        "matching_metrics": {
+          "iou": {
+            "true_positives": 2,
+            "false_positives": 1037,
+            "false_negatives": 4131,
+            "precision": 0.0019249278152069298,
+            "recall": 0.0004839099927413501,
+            "f1": 0.0007733952049497294
+          },
+          "center": {
+            "true_positives": 133,
+            "false_positives": 906,
+            "false_negatives": 4000,
+            "precision": 0.12800769971126083,
+            "recall": 0.03218001451729978,
+            "f1": 0.051430781129157
+          }
+        },
+        "count_mae": 9.285,
+        "count_rmse": 9.918165152889923,
+        "count_bias": -7.735,
+        "count_pearson_correlation": -0.08577716334850191
+      },
+      "job_000008": {
+        "frame_count": 400,
+        "annotated_frame_count": 354,
+        "annotation_coverage": 0.885,
+        "frames_without_predictions": 0,
+        "reference_boxes": 842,
+        "predicted_boxes_on_annotated_frames": 4757,
+        "matching_metrics": {
+          "iou": {
+            "true_positives": 0,
+            "false_positives": 4757,
+            "false_negatives": 842,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "center": {
+            "true_positives": 8,
+            "false_positives": 4749,
+            "false_negatives": 834,
+            "precision": 0.0016817321841496743,
+            "recall": 0.009501187648456057,
+            "f1": 0.002857653152348634
+          }
+        },
+        "count_mae": 11.059322033898304,
+        "count_rmse": 11.680661501274002,
+        "count_bias": 11.059322033898304,
+        "count_pearson_correlation": 0.2362859581280136
+      },
+      "job_000009": {
+        "frame_count": 392,
+        "annotated_frame_count": 357,
+        "annotation_coverage": 0.9107142857142857,
+        "frames_without_predictions": 0,
+        "reference_boxes": 2021,
+        "predicted_boxes_on_annotated_frames": 3099,
+        "matching_metrics": {
+          "iou": {
+            "true_positives": 1,
+            "false_positives": 3098,
+            "false_negatives": 2020,
+            "precision": 0.00032268473701193933,
+            "recall": 0.0004948045522018803,
+            "f1": 0.0003906250000000001
+          },
+          "center": {
+            "true_positives": 514,
+            "false_positives": 2585,
+            "false_negatives": 1507,
+            "precision": 0.16585995482413682,
+            "recall": 0.2543295398317664,
+            "f1": 0.20078124999999997
+          }
+        },
+        "count_mae": 3.2324929971988796,
+        "count_rmse": 4.164677396284861,
+        "count_bias": 3.019607843137255,
+        "count_pearson_correlation": 0.1108625752914048
+      },
+      "job_000010": {
+        "frame_count": 400,
+        "annotated_frame_count": 398,
+        "annotation_coverage": 0.995,
+        "frames_without_predictions": 0,
+        "reference_boxes": 2852,
+        "predicted_boxes_on_annotated_frames": 3771,
+        "matching_metrics": {
+          "iou": {
+            "true_positives": 13,
+            "false_positives": 3758,
+            "false_negatives": 2839,
+            "precision": 0.003447361442588173,
+            "recall": 0.00455820476858345,
+            "f1": 0.003925713422920127
+          },
+          "center": {
+            "true_positives": 656,
+            "false_positives": 3115,
+            "false_negatives": 2196,
+            "precision": 0.1739591620259878,
+            "recall": 0.2300140252454418,
+            "f1": 0.19809753887966175
+          }
+        },
+        "count_mae": 3.9321608040201004,
+        "count_rmse": 5.017807485326534,
+        "count_bias": 2.309045226130653,
+        "count_pearson_correlation": 0.08204356368477123
+      },
+      "job_000011": {
+        "frame_count": 400,
+        "annotated_frame_count": 400,
+        "annotation_coverage": 1.0,
+        "frames_without_predictions": 0,
+        "reference_boxes": 4032,
+        "predicted_boxes_on_annotated_frames": 7221,
+        "matching_metrics": {
+          "iou": {
+            "true_positives": 53,
+            "false_positives": 7168,
+            "false_negatives": 3979,
+            "precision": 0.007339703642154826,
+            "recall": 0.01314484126984127,
+            "f1": 0.009419710299475696
+          },
+          "center": {
+            "true_positives": 1404,
+            "false_positives": 5817,
+            "false_negatives": 2628,
+            "precision": 0.19443290402991276,
+            "recall": 0.3482142857142857,
+            "f1": 0.24953345774460142
+          }
+        },
+        "count_mae": 8.0825,
+        "count_rmse": 9.48037446517805,
+        "count_bias": 7.9725,
+        "count_pearson_correlation": -0.11199379287031282
+      }
+    },
+    "sites": {
+      "Bulgaria": {
+        "frame_count": 1200,
+        "annotated_frame_count": 1154,
+        "annotation_coverage": 0.9616666666666667,
+        "frames_without_predictions": 371,
+        "reference_boxes": 10956,
+        "predicted_boxes_on_annotated_frames": 6259,
+        "matching_metrics": {
+          "iou": {
+            "true_positives": 20,
+            "false_positives": 6239,
+            "false_negatives": 10936,
+            "precision": 0.003195398625978591,
+            "recall": 0.0018254837531945967,
+            "f1": 0.0023235550392099913
+          },
+          "center": {
+            "true_positives": 317,
+            "false_positives": 5942,
+            "false_negatives": 10639,
+            "precision": 0.05064706822176066,
+            "recall": 0.028933917488134356,
+            "f1": 0.03682834737147836
+          }
+        },
+        "count_mae": 11.392547660311958,
+        "count_rmse": 11.982692602683196,
+        "count_bias": -4.070190641247834,
+        "count_pearson_correlation": -0.6981627469424307
+      },
+      "Rwanda": {
+        "frame_count": 1192,
+        "annotated_frame_count": 1155,
+        "annotation_coverage": 0.9689597315436241,
+        "frames_without_predictions": 0,
+        "reference_boxes": 8905,
+        "predicted_boxes_on_annotated_frames": 14091,
+        "matching_metrics": {
+          "iou": {
+            "true_positives": 67,
+            "false_positives": 14024,
+            "false_negatives": 8838,
+            "precision": 0.004754808033496558,
+            "recall": 0.007523862998315553,
+            "f1": 0.005827100365280919
+          },
+          "center": {
+            "true_positives": 2574,
+            "false_positives": 11517,
+            "false_negatives": 6331,
+            "precision": 0.18266978922716628,
+            "recall": 0.28905109489051095,
+            "f1": 0.22386502000347888
+          }
+        },
+        "count_mae": 5.153246753246753,
+        "count_rmse": 6.720389599095901,
+        "count_bias": 4.49004329004329,
+        "count_pearson_correlation": 0.5101907810929016
+      }
+    }
+  },
+  "monitoring_integration_gate": {
+    "minimum_center_f1": 0.5,
+    "observed_center_f1": 0.14379149983835268,
+    "passed": false,
+    "decision": "block predicted monitoring",
+    "reason": "Detector transfer is too weak; fine-tune before generating risk alerts."
+  },
+  "elapsed_seconds": 36.12837316695368,
+  "claim_boundary": "This is a cross-dataset transfer audit against NESTLER tracking boxes, not a Piling-event evaluation. Threshold selection and reporting use the same clips."
+}

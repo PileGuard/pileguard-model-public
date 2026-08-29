@@ -1,0 +1,19 @@
+[data]
+dataset_path = "extracted/nestler_v1/poultry_behaviour_dataset/chickens"
+job_pattern = "job_*"
+video_pattern = "job_*_400frames.mp4"
+annotation_pattern = "annotations_*.json"
+
+[split]
+train = ["job_000004", "job_000009"]
+val = ["job_000007", "job_000010"]
+test = ["job_000008", "job_000011"]
+
+[image]
+width = 960
+jpeg_quality = 90
+
+[output]
+dataset_dir = "outputs/nestler-detection-dataset/fold-1"
+artifact_dir = "artifacts/nestler-detection-dataset"
+

@@ -1,0 +1,32 @@
+[simulation]
+duration_seconds = 180
+step_seconds = 1
+seed = 2026
+
+[risk]
+smoothing_alpha = 0.18
+watch_threshold = 40.0
+warning_threshold = 60.0
+critical_threshold = 80.0
+release_margin = 5.0
+
+[scenarios.social_attraction]
+display_name = "Social attraction"
+observed_share_percent = [62.6]
+description = "Sustained inflow toward a corner or active bird raises density and lowers distance."
+
+[scenarios.group_convergence]
+display_name = "Group movement convergence"
+observed_share_percent = [23.8]
+description = "Coherent one-way movement converges through a bottleneck into high density."
+
+[scenarios.external_context]
+display_name = "Worker following / out-of-view"
+observed_share_percent = [2.1, 10.8]
+description = "Door or blind-spot context precedes cornerward inflow and local density growth."
+
+[input]
+nestler_features = "artifacts/nestler-features/frame_features.csv"
+
+[output]
+artifact_dir = "artifacts/digital-twin"

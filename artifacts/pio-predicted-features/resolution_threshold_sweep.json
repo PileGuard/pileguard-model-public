@@ -1,0 +1,58 @@
+{
+  "split": "val",
+  "selection_objective": "minimum week-stratified object-count MAE among tested settings",
+  "baseline": {
+    "image_size": 320,
+    "confidence_threshold": 0.15,
+    "object_count_mae": 34.83185840707964,
+    "object_count_mae_over_reference_mean": 0.2131686908485316,
+    "object_count_bias": -11.61504424778761,
+    "object_count_pearson_correlation": 0.9153187702149126,
+    "week_1_mae_over_reference_mean": 0.5715021901571761
+  },
+  "fixed_480px_candidates": [
+    {
+      "confidence_threshold": 0.15,
+      "object_count_mae": 50.68141592920354,
+      "object_count_bias": 35.4646017699115,
+      "week_1_mae_over_reference_mean": 0.2836897706776604
+    },
+    {
+      "confidence_threshold": 0.2,
+      "object_count_mae": 34.94690265486726,
+      "object_count_bias": 6.234513274336283,
+      "week_1_mae_over_reference_mean": 0.42179850553980935
+    },
+    {
+      "confidence_threshold": 0.25,
+      "object_count_mae": 34.08849557522124,
+      "object_count_bias": -17.265486725663717,
+      "week_1_mae_over_reference_mean": 0.5324658593146097
+    }
+  ],
+  "selected_policy": {
+    "image_size": 480,
+    "confidence_by_week": {
+      "1": 0.15,
+      "2": 0.2,
+      "3": 0.2,
+      "4": 0.25,
+      "5": 0.25,
+      "6": 0.25
+    },
+    "predicted_boxes": 73301,
+    "reference_boxes": 73857,
+    "object_count_mae": 24.77433628318584,
+    "object_count_mae_over_reference_mean": 0.15161731454026023,
+    "object_count_bias": -1.2300884955752212,
+    "object_count_pearson_correlation": 0.9670276743351686,
+    "bbox_area_ratio_pearson_correlation": 0.978662215043108,
+    "week_1_mae_over_reference_mean": 0.2836897706776604
+  },
+  "improvement": {
+    "object_count_mae_reduction_fraction": 0.288744918699187,
+    "week_1_relative_mae_reduction_fraction": 0.5036068530207395
+  },
+  "deployment_requirement": "The live pipeline must receive flock age from farm metadata; PIO filename parsing is dataset-specific.",
+  "evaluation_note": "Resolution and week-specific thresholds were selected and summarized on the same PIO validation split. These are descriptive calibration results, not an unbiased held-out test estimate."
+}

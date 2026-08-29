@@ -1,0 +1,175 @@
+{
+  "source_detector": "AI Hub laying-hen fine-tuned YOLO26n",
+  "evaluated_images": 4546,
+  "selected_confidence_threshold": 0.2,
+  "thresholds_evaluated": [
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.4,
+    0.45,
+    0.5,
+    0.6,
+    0.7
+  ],
+  "overall_error_distribution": {
+    "image_count": 4546,
+    "reference_boxes": 106023,
+    "predicted_boxes": 110413,
+    "count_error": {
+      "mae": 6.203255609326881,
+      "median_absolute_error": 5.0,
+      "p90_absolute_error": 12.0,
+      "p95_absolute_error": 15.0,
+      "p99_absolute_error": 23.550000000000182,
+      "bias": 0.9656841179058513,
+      "undercount_images": 1517,
+      "undercount_fraction": 0.33369995600527935,
+      "exact_count_images": 170,
+      "exact_count_fraction": 0.03739551253849538,
+      "overcount_images": 2859,
+      "overcount_fraction": 0.6289045314562253
+    },
+    "center_matching": {
+      "true_positives": 80802,
+      "false_positives": 29611,
+      "false_negatives": 25221,
+      "f1": 0.7466595205973129
+    }
+  },
+  "stage_error_distribution": {
+    "early": {
+      "image_count": 1527,
+      "reference_boxes": 32299,
+      "predicted_boxes": 21597,
+      "count_error": {
+        "mae": 7.647675180091683,
+        "median_absolute_error": 6.0,
+        "p90_absolute_error": 16.0,
+        "p95_absolute_error": 19.0,
+        "p99_absolute_error": 36.74000000000001,
+        "bias": -7.008513425016372,
+        "undercount_images": 1249,
+        "undercount_fraction": 0.8179436804191225,
+        "exact_count_images": 52,
+        "exact_count_fraction": 0.034053700065487885,
+        "overcount_images": 226,
+        "overcount_fraction": 0.14800261951538965
+      },
+      "center_matching": {
+        "true_positives": 16882,
+        "false_positives": 4715,
+        "false_negatives": 15417,
+        "f1": 0.6264657859581416
+      }
+    },
+    "middle": {
+      "image_count": 1466,
+      "reference_boxes": 36652,
+      "predicted_boxes": 43718,
+      "count_error": {
+        "mae": 5.281036834924966,
+        "median_absolute_error": 5.0,
+        "p90_absolute_error": 10.0,
+        "p95_absolute_error": 12.0,
+        "p99_absolute_error": 15.0,
+        "bias": 4.8199181446111865,
+        "undercount_images": 136,
+        "undercount_fraction": 0.0927694406548431,
+        "exact_count_images": 62,
+        "exact_count_fraction": 0.04229195088676671,
+        "overcount_images": 1268,
+        "overcount_fraction": 0.8649386084583902
+      },
+      "center_matching": {
+        "true_positives": 31575,
+        "false_positives": 12143,
+        "false_negatives": 5077,
+        "f1": 0.7857409481149683
+      }
+    },
+    "late": {
+      "image_count": 1553,
+      "reference_boxes": 37072,
+      "predicted_boxes": 45098,
+      "count_error": {
+        "mae": 5.653573728267869,
+        "median_absolute_error": 5.0,
+        "p90_absolute_error": 11.0,
+        "p95_absolute_error": 12.0,
+        "p99_absolute_error": 16.0,
+        "bias": 5.168061815840309,
+        "undercount_images": 132,
+        "undercount_fraction": 0.0849967804249839,
+        "exact_count_images": 56,
+        "exact_count_fraction": 0.0360592401802962,
+        "overcount_images": 1365,
+        "overcount_fraction": 0.8789439793947199
+      },
+      "center_matching": {
+        "true_positives": 32345,
+        "false_positives": 12753,
+        "false_negatives": 4727,
+        "f1": 0.7872702932943897
+      }
+    }
+  },
+  "stage_diagnostic_best_thresholds": {
+    "early": {
+      "confidence_threshold": 0.1,
+      "stage": "early",
+      "precision": 0.6264761208067718,
+      "recall": 0.7424068856620948,
+      "f1": 0.6795324123273113,
+      "count_mae": 7.073346430910282,
+      "count_bias": 3.914210870988867
+    },
+    "middle": {
+      "confidence_threshold": 0.35,
+      "stage": "middle",
+      "precision": 0.8221433927438426,
+      "recall": 0.7777747462621413,
+      "f1": 0.7993438577797719,
+      "count_mae": 3.231923601637108,
+      "count_bias": -1.34924965893588
+    },
+    "late": {
+      "confidence_threshold": 0.35,
+      "stage": "late",
+      "precision": 0.8242567968154485,
+      "recall": 0.7875485541648684,
+      "f1": 0.8054846674851365,
+      "count_mae": 3.1635544108177722,
+      "count_bias": -1.0631036703155183
+    }
+  },
+  "global_threshold_tradeoff": {
+    "localization_f1_best": {
+      "confidence_threshold": 0.2,
+      "center_f1": 0.7466595205973128,
+      "count_mae": 6.203255609326881,
+      "count_bias": 0.9656841179058513
+    },
+    "count_mae_best": {
+      "confidence_threshold": 0.25,
+      "center_f1": 0.7450128786292659,
+      "count_mae": 5.750329960404751,
+      "count_bias": -1.4665640123185217
+    }
+  },
+  "weakest_stage_at_selected_threshold": "early",
+  "worst_case_count": 30,
+  "operating_recommendation": {
+    "mode": "single global threshold",
+    "confidence_threshold": 0.2,
+    "minimum_stage_center_f1": 0.6264657859581416,
+    "all_stages_pass_configured_gate": true,
+    "raw_count_calibration_required": true,
+    "reason": "Use the aggregate center-F1 optimum for localization monitoring. Do not treat raw predicted count as a calibrated density estimate because count bias changes by laying stage. Stage-specific thresholds are diagnostic only because they were selected on the same Validation split."
+  },
+  "claim_boundary": "This audit reuses the same official AI Hub Validation split used for checkpoint and threshold selection. It diagnoses static laying-hen localization errors; it is not an independent farm test or a piling/smothering incident evaluation."
+}

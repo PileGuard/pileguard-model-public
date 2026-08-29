@@ -1,0 +1,24 @@
+[model]
+weights = "weights/pio-yolo26n/best.pt"
+detector_label = "PIO YOLO26n overseas broiler baseline"
+image_size = 480
+batch_size = 4
+device = "auto"
+
+[evaluation]
+minimum_confidence = 0.05
+confidence_thresholds = [0.05, 0.10, 0.15, 0.25]
+inference_iou_threshold = 0.70
+iou_threshold = 0.50
+center_distance_threshold = 0.05
+max_detections = 1500
+
+[features]
+grid_rows = 4
+grid_columns = 4
+
+[quality]
+minimum_center_f1_for_monitoring = 0.50
+
+[output]
+artifact_dir = "artifacts/aihub-domestic-validation"

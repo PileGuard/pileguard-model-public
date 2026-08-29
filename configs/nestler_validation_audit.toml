@@ -1,0 +1,24 @@
+[input]
+dataset_yaml = "outputs/nestler-detection-dataset/fold-1/dataset.yaml"
+dataset_summary = "artifacts/nestler-detection-dataset/summary.json"
+training_summary = "artifacts/nestler-tracker-yolo26n/training_summary.json"
+frozen_test_metrics = "artifacts/nestler-tracker-yolo26n/test/metrics.json"
+weights = "weights/nestler-tracker-yolo26n/best.pt"
+
+[evaluation]
+image_size = 480
+batch_size = 4
+workers = 0
+device = "auto"
+confidence_threshold = 0.001
+iou_threshold = 0.7
+max_detections = 1500
+
+[density]
+low_maximum = 5
+medium_maximum = 10
+
+[output]
+run_root = "outputs/nestler-validation-slice-audit"
+artifact_dir = "artifacts/nestler-tracker-yolo26n/validation-audit"
+

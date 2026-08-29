@@ -1,0 +1,221 @@
+{
+  "detector": "AI Hub laying-hen fine-tuned YOLO26n",
+  "checkpoint": "weights/aihub-laying-hen-yolo26n/best.pt",
+  "device": "mps",
+  "confidence_threshold": 0.2,
+  "videos": [
+    {
+      "video_id": "job_000004",
+      "site": "Bulgaria",
+      "source_filename": "job_000004_400frames.mp4",
+      "source_dataset": "NESTLER Poultry Behaviour Analytics Detection Dataset",
+      "source_doi": "10.5281/zenodo.20924893",
+      "source_license": "CC BY 4.0",
+      "fps": 20.0,
+      "sample_fps": 20.0,
+      "frame_stride": 1,
+      "frame_width": 1920,
+      "frame_height": 1080,
+      "raw_frame_count": 400,
+      "frames_processed": 400,
+      "frames_without_detections": 0,
+      "elapsed_seconds": 8.232764624990523,
+      "processed_frames_per_second": 48.58635199964319
+    },
+    {
+      "video_id": "job_000007",
+      "site": "Bulgaria",
+      "source_filename": "job_000007_400frames.mp4",
+      "source_dataset": "NESTLER Poultry Behaviour Analytics Detection Dataset",
+      "source_doi": "10.5281/zenodo.20924893",
+      "source_license": "CC BY 4.0",
+      "fps": 20.0,
+      "sample_fps": 20.0,
+      "frame_stride": 1,
+      "frame_width": 1920,
+      "frame_height": 1080,
+      "raw_frame_count": 400,
+      "frames_processed": 400,
+      "frames_without_detections": 0,
+      "elapsed_seconds": 8.05688754201401,
+      "processed_frames_per_second": 49.646963286273014
+    },
+    {
+      "video_id": "job_000008",
+      "site": "Bulgaria",
+      "source_filename": "job_000008_400frames.mp4",
+      "source_dataset": "NESTLER Poultry Behaviour Analytics Detection Dataset",
+      "source_doi": "10.5281/zenodo.20924893",
+      "source_license": "CC BY 4.0",
+      "fps": 20.0,
+      "sample_fps": 20.0,
+      "frame_stride": 1,
+      "frame_width": 1920,
+      "frame_height": 1080,
+      "raw_frame_count": 400,
+      "frames_processed": 400,
+      "frames_without_detections": 0,
+      "elapsed_seconds": 7.82386345800478,
+      "processed_frames_per_second": 51.125636604860546
+    },
+    {
+      "video_id": "job_000009",
+      "site": "Rwanda",
+      "source_filename": "job_000009_400frames.mp4",
+      "source_dataset": "NESTLER Poultry Behaviour Analytics Detection Dataset",
+      "source_doi": "10.5281/zenodo.20924893",
+      "source_license": "CC BY 4.0",
+      "fps": 30.0,
+      "sample_fps": 30.0,
+      "frame_stride": 1,
+      "frame_width": 1920,
+      "frame_height": 1080,
+      "raw_frame_count": 392,
+      "frames_processed": 392,
+      "frames_without_detections": 0,
+      "elapsed_seconds": 7.779118209029548,
+      "processed_frames_per_second": 50.391315502184966
+    },
+    {
+      "video_id": "job_000010",
+      "site": "Rwanda",
+      "source_filename": "job_000010_400frames.mp4",
+      "source_dataset": "NESTLER Poultry Behaviour Analytics Detection Dataset",
+      "source_doi": "10.5281/zenodo.20924893",
+      "source_license": "CC BY 4.0",
+      "fps": 30.0,
+      "sample_fps": 30.0,
+      "frame_stride": 1,
+      "frame_width": 1920,
+      "frame_height": 1080,
+      "raw_frame_count": 400,
+      "frames_processed": 400,
+      "frames_without_detections": 0,
+      "elapsed_seconds": 8.0029410829884,
+      "processed_frames_per_second": 49.9816249866274
+    },
+    {
+      "video_id": "job_000011",
+      "site": "Rwanda",
+      "source_filename": "job_000011_400frames.mp4",
+      "source_dataset": "NESTLER Poultry Behaviour Analytics Detection Dataset",
+      "source_doi": "10.5281/zenodo.20924893",
+      "source_license": "CC BY 4.0",
+      "fps": 30.0,
+      "sample_fps": 30.0,
+      "frame_stride": 1,
+      "frame_width": 1920,
+      "frame_height": 1080,
+      "raw_frame_count": 400,
+      "frames_processed": 400,
+      "frames_without_detections": 0,
+      "elapsed_seconds": 7.898501500021666,
+      "processed_frames_per_second": 50.64251744446751
+    }
+  ],
+  "feature_distributions": {
+    "object_count": {
+      "valid_count": 2392,
+      "mean": 8.191053511705686,
+      "std": 4.411792902649171,
+      "p50": 8.0,
+      "p95": 16.0,
+      "max": 20.0
+    },
+    "bbox_area_ratio": {
+      "valid_count": 2392,
+      "mean": 0.09134965611802011,
+      "std": 0.05063477033264226,
+      "p50": 0.08608153347058219,
+      "p95": 0.1832222799092381,
+      "max": 0.3983208053372684
+    },
+    "center_spread": {
+      "valid_count": 2392,
+      "mean": 0.3007149642436806,
+      "std": 0.09215238244631378,
+      "p50": 0.3139014238427392,
+      "p95": 0.4203315974159357,
+      "max": 0.5034530355190603
+    },
+    "mean_nearest_neighbor_distance": {
+      "valid_count": 2321,
+      "mean": 0.19723640832630487,
+      "std": 0.1341814909017292,
+      "p50": 0.14328181156709238,
+      "p95": 0.4885067328373502,
+      "max": 1.0069060710381206
+    },
+    "max_grid_fraction": {
+      "valid_count": 2392,
+      "mean": 0.33498924786776707,
+      "std": 0.15867560884472254,
+      "p50": 0.2857142857142857,
+      "p95": 0.5,
+      "max": 1.0
+    },
+    "tracked_speed_per_second": {
+      "valid_count": 0,
+      "mean": null,
+      "std": null,
+      "p50": null,
+      "p95": null,
+      "max": null
+    },
+    "tracked_coherence": {
+      "valid_count": 0,
+      "mean": null,
+      "std": null,
+      "p50": null,
+      "p95": null,
+      "max": null
+    },
+    "flow_speed_per_second": {
+      "valid_count": 2386,
+      "mean": 0.0132886986818196,
+      "std": 0.04008866000421009,
+      "p50": 0.006597683299332857,
+      "p95": 0.03226151876151562,
+      "max": 0.9086724519729614
+    },
+    "flow_p90_speed_per_second": {
+      "valid_count": 2386,
+      "mean": 0.03803116461041181,
+      "std": 0.08837011371053848,
+      "p50": 0.018510300666093826,
+      "p95": 0.10152747295796871,
+      "max": 1.4705787897109985
+    },
+    "flow_divergence_per_second": {
+      "valid_count": 2386,
+      "mean": -0.01119387733134925,
+      "std": 0.09979661951138397,
+      "p50": -0.0032138590468093753,
+      "p95": 0.0610607024282217,
+      "max": 1.7504414319992065
+    },
+    "flow_convergence_per_second": {
+      "valid_count": 2386,
+      "mean": 0.02551041425362252,
+      "std": 0.07399522416428009,
+      "p50": 0.0032138590468093753,
+      "p95": 0.0993388406932354,
+      "max": 1.3808369636535645
+    },
+    "flow_coherence": {
+      "valid_count": 2386,
+      "mean": 0.4867727843492499,
+      "std": 0.21921811638109237,
+      "p50": 0.4881150886523239,
+      "p95": 0.8296804867823041,
+      "max": 0.9932434798027436
+    }
+  },
+  "tracking_features_available": false,
+  "source": {
+    "dataset": "NESTLER Poultry Behaviour Analytics Detection Dataset",
+    "doi": "10.5281/zenodo.20924893",
+    "license": "CC BY 4.0",
+    "event_labels_available": false
+  }
+}

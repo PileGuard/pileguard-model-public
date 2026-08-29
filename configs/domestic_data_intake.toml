@@ -1,0 +1,26 @@
+[data]
+dataset_path = "incoming/domestic_v1"
+clip_manifest = "clips.csv"
+event_manifest = "events.csv"
+
+[security]
+allowed_video_suffixes = [".mp4", ".mov", ".avi"]
+minimum_file_bytes = 12
+identifier_pattern = "^[A-Z][A-Z0-9_-]{2,31}$"
+
+[quality]
+minimum_duration_seconds = 10.0
+minimum_width = 640
+minimum_height = 360
+minimum_fps = 10.0
+maximum_fps = 120.0
+
+[labels]
+allowed_clip_outcomes = ["normal", "near_piling", "piling"]
+allowed_event_types = ["near_piling", "piling"]
+accepted_review_statuses = ["double_reviewed", "adjudicated"]
+required_splits = ["train", "val", "test"]
+required_outcomes_per_split = ["normal", "piling"]
+
+[output]
+audit_path = "outputs/domestic-data-intake/audit.json"

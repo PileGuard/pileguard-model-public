@@ -1,0 +1,32 @@
+[input]
+dataset_yaml = "outputs/nestler-detection-dataset/fold-1/dataset.yaml"
+dataset_summary = "artifacts/nestler-detection-dataset/summary.json"
+baseline_training_summary = "artifacts/nestler-tracker-yolo26n/training_summary.json"
+validation_audit = "artifacts/nestler-tracker-yolo26n/validation-audit/summary.json"
+frozen_test_metrics = "artifacts/nestler-tracker-yolo26n/test/metrics.json"
+initialization_weights = "weights/nestler-tracker-yolo26n/best.pt"
+
+[balancing]
+low_maximum = 5
+medium_maximum = 10
+target = "largest-density-bin"
+
+[training]
+epochs = 3
+image_size = 480
+batch_size = 4
+workers = 0
+patience = 3
+seed = 2026
+device = "auto"
+max_detections = 1500
+close_mosaic = 3
+optimizer = "auto"
+weight_decay = 0.0005
+
+[output]
+runtime_dir = "outputs/nestler-balanced-yolo26n/runtime"
+run_root = "outputs/nestler-balanced-yolo26n"
+artifact_dir = "artifacts/nestler-balanced-yolo26n"
+checkpoint_dir = "weights/nestler-balanced-yolo26n"
+

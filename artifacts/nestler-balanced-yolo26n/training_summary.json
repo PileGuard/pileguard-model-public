@@ -1,0 +1,67 @@
+{
+  "status": "validation-only balanced fine-tune",
+  "initialization": "validation-selected NESTLER checkpoint",
+  "class_name": "nestler_tracker_region",
+  "balance_audit": {
+    "strategy": "oversample every train density bin to the largest source bin",
+    "seed": 2026,
+    "source_unique_images": 757,
+    "training_manifest_rows": 1194,
+    "target_rows_per_density_bin": 398,
+    "source_density_counts": {
+      "density-low": 146,
+      "density-medium": 213,
+      "density-high": 398
+    },
+    "balanced_density_counts": {
+      "density-low": 398,
+      "density-medium": 398,
+      "density-high": 398
+    },
+    "balanced_job_counts": {
+      "job_000004": 402,
+      "job_000009": 792
+    },
+    "validation_images_added": 0,
+    "test_images_added": 0,
+    "validation_manifest_rows": 798,
+    "test_manifest_in_training_yaml": false
+  },
+  "epochs": 3,
+  "image_size": 480,
+  "batch_size": 4,
+  "device": "cpu",
+  "optimizer_requested": "auto",
+  "optimizer_selected": "AdamW",
+  "elapsed_seconds": 448.58117304201005,
+  "baseline_validation_metrics": {
+    "precision": 0.5828207547375516,
+    "recall": 0.3020758768790265,
+    "map50": 0.2869940618072525,
+    "map50_95": 0.11372305436159669,
+    "fitness": 0.11372305436159669
+  },
+  "validation_metrics": {
+    "precision": 0.6122333396938539,
+    "recall": 0.33142448103078026,
+    "map50": 0.3289192989226313,
+    "map50_95": 0.13404714611177132,
+    "fitness": 0.13404714611177132
+  },
+  "validation_delta": {
+    "precision": 0.02941258495630228,
+    "recall": 0.029348604151753777,
+    "map50": 0.041925237115378766,
+    "map50_95": 0.020324091750174633
+  },
+  "test_evaluated": false,
+  "frozen_test_reused": false,
+  "frozen_test_checkpoint": "independent test finalized",
+  "evidence_files": [
+    "results.csv",
+    "results.png",
+    "labels.jpg"
+  ],
+  "checkpoint": "weights/nestler-balanced-yolo26n/best.pt",
+  "claim_boundary": "This second-stage model is selected on the existing validation clips only. Frozen test metrics apply to the previous checkpoint and cannot be claimed for this changed model. New independent and domestic data are required."
+}

@@ -1,0 +1,783 @@
+{
+  "source_detector": "PIO YOLO26n overseas broiler baseline",
+  "evaluation_dataset": "AI Hub 575 Korean laying-hen community images",
+  "evaluation_mode": "full Validation",
+  "checkpoint": "weights/pio-yolo26n/best.pt",
+  "device": "cpu",
+  "image_size": 480,
+  "dataset_audit": {
+    "source": "AI Hub dataset 575, official Validation community-image subset",
+    "split": "Validation",
+    "stage_count": 3,
+    "image_count": 4546,
+    "box_count": 106023,
+    "action_positive_boxes": 22058,
+    "stages": {
+      "early": {
+        "image_count": 1527,
+        "box_count": 32299,
+        "action_positive_boxes": 6458,
+        "clipped_boxes": 1,
+        "resolutions": [
+          "1280x786",
+          "2560x1944"
+        ]
+      },
+      "middle": {
+        "image_count": 1466,
+        "box_count": 36652,
+        "action_positive_boxes": 7471,
+        "clipped_boxes": 0,
+        "resolutions": [
+          "1920x1080"
+        ]
+      },
+      "late": {
+        "image_count": 1553,
+        "box_count": 37072,
+        "action_positive_boxes": 8129,
+        "clipped_boxes": 0,
+        "resolutions": [
+          "1920x1080"
+        ]
+      }
+    },
+    "claim_boundary": "Community images provide laying-hen boxes and static crowding scenes. They do not provide continuous timing or piling/smothering incident labels."
+  },
+  "evaluated_images": 4546,
+  "selected_confidence_threshold": 0.25,
+  "threshold_selection_split": "same AI Hub Validation images reported below",
+  "threshold_results": {
+    "0.05": {
+      "localization": {
+        "frame_count": 4546,
+        "annotated_frame_count": 4546,
+        "annotation_coverage": 1.0,
+        "frames_without_predictions": 5,
+        "reference_boxes": 106023,
+        "predicted_boxes_on_annotated_frames": 655360,
+        "matching_metrics": {
+          "iou": {
+            "true_positives": 8146,
+            "false_positives": 647214,
+            "false_negatives": 97877,
+            "precision": 0.0124298095703125,
+            "recall": 0.07683238542580384,
+            "f1": 0.021397903551826084
+          },
+          "center": {
+            "true_positives": 74874,
+            "false_positives": 580486,
+            "false_negatives": 31149,
+            "precision": 0.1142486572265625,
+            "recall": 0.7062052573498203,
+            "f1": 0.1966789381953629
+          }
+        },
+        "count_mae": 122.2853057633084,
+        "count_rmse": 145.26158345785907,
+        "count_bias": 120.8396392432908,
+        "count_pearson_correlation": 0.25121282206106904
+      },
+      "density_features": {
+        "image_count": 4546,
+        "predicted_boxes": 655360,
+        "reference_boxes": 106023,
+        "images_without_predictions": 5,
+        "feature_metrics": {
+          "object_count": {
+            "valid_images": 4546,
+            "reference_mean": 23.322261328640565,
+            "predicted_mean": 144.16190057193137,
+            "mae": 122.2853057633084,
+            "mae_over_reference_mean": 5.243286833988851,
+            "rmse": 145.26158345785907,
+            "bias": 120.8396392432908,
+            "pearson_correlation": 0.25121282206106904
+          },
+          "bbox_area_ratio": {
+            "valid_images": 4546,
+            "reference_mean": 0.4521822599654509,
+            "predicted_mean": 0.4086692178115542,
+            "mae": 0.1342351743720339,
+            "mae_over_reference_mean": 0.29686077110209974,
+            "rmse": 0.1691640274573514,
+            "bias": -0.043513042153896744,
+            "pearson_correlation": 0.7916408496917536
+          },
+          "center_spread": {
+            "valid_images": 4541,
+            "reference_mean": 0.28477319040922133,
+            "predicted_mean": 0.33499248428836237,
+            "mae": 0.059339152913961725,
+            "mae_over_reference_mean": 0.20837338244056924,
+            "rmse": 0.06720879703295754,
+            "bias": 0.050219293879141015,
+            "pearson_correlation": 0.830220626712472
+          },
+          "mean_nearest_neighbor_distance": {
+            "valid_images": 4537,
+            "reference_mean": 0.09765806166434168,
+            "predicted_mean": 0.030619930775576912,
+            "mae": 0.07006781765943598,
+            "mae_over_reference_mean": 0.7174811425222066,
+            "rmse": 0.07817262720674306,
+            "bias": -0.06703813088876477,
+            "pearson_correlation": -0.1328450603647142
+          },
+          "max_grid_fraction": {
+            "valid_images": 4546,
+            "reference_mean": 0.24088449978851112,
+            "predicted_mean": 0.20362478686261087,
+            "mae": 0.07300601641588893,
+            "mae_over_reference_mean": 0.3030747784933687,
+            "rmse": 0.11255778262018244,
+            "bias": -0.037259712925900225,
+            "pearson_correlation": 0.5318637157395176
+          }
+        }
+      }
+    },
+    "0.1": {
+      "localization": {
+        "frame_count": 4546,
+        "annotated_frame_count": 4546,
+        "annotation_coverage": 1.0,
+        "frames_without_predictions": 16,
+        "reference_boxes": 106023,
+        "predicted_boxes_on_annotated_frames": 387752,
+        "matching_metrics": {
+          "iou": {
+            "true_positives": 5687,
+            "false_positives": 382065,
+            "false_negatives": 100336,
+            "precision": 0.014666591016938662,
+            "recall": 0.05363930467917339,
+            "f1": 0.023034783048959548
+          },
+          "center": {
+            "true_positives": 61628,
+            "false_positives": 326124,
+            "false_negatives": 44395,
+            "precision": 0.15893663991417195,
+            "recall": 0.5812701017703705,
+            "f1": 0.24961976608779302
+          }
+        },
+        "count_mae": 65.55939287285526,
+        "count_rmse": 80.51114068715603,
+        "count_bias": 61.97294324681038,
+        "count_pearson_correlation": 0.25553217205288653
+      },
+      "density_features": {
+        "image_count": 4546,
+        "predicted_boxes": 387752,
+        "reference_boxes": 106023,
+        "images_without_predictions": 16,
+        "feature_metrics": {
+          "object_count": {
+            "valid_images": 4546,
+            "reference_mean": 23.322261328640565,
+            "predicted_mean": 85.29520457545095,
+            "mae": 65.55939287285526,
+            "mae_over_reference_mean": 2.8110221367061863,
+            "rmse": 80.51114068715603,
+            "bias": 61.97294324681038,
+            "pearson_correlation": 0.25553217205288653
+          },
+          "bbox_area_ratio": {
+            "valid_images": 4546,
+            "reference_mean": 0.4521822599654509,
+            "predicted_mean": 0.23784435398892928,
+            "mae": 0.21705828545248546,
+            "mae_over_reference_mean": 0.48002388565413834,
+            "rmse": 0.2462623615485448,
+            "bias": -0.21433790597652164,
+            "pearson_correlation": 0.7716853651536764
+          },
+          "center_spread": {
+            "valid_images": 4530,
+            "reference_mean": 0.28491492442478594,
+            "predicted_mean": 0.32860718721700627,
+            "mae": 0.05840250949780294,
+            "mae_over_reference_mean": 0.20498227537820854,
+            "rmse": 0.06767590408263466,
+            "bias": 0.043692262792220354,
+            "pearson_correlation": 0.8043738003103785
+          },
+          "mean_nearest_neighbor_distance": {
+            "valid_images": 4508,
+            "reference_mean": 0.09778049352064316,
+            "predicted_mean": 0.04615308681932484,
+            "mae": 0.0613932525055459,
+            "mae_over_reference_mean": 0.6278680981762964,
+            "rmse": 0.07261303102268067,
+            "bias": -0.05162740670131833,
+            "pearson_correlation": -0.11183361533590835
+          },
+          "max_grid_fraction": {
+            "valid_images": 4546,
+            "reference_mean": 0.24088449978851112,
+            "predicted_mean": 0.2256975014315679,
+            "mae": 0.07343629564370242,
+            "mae_over_reference_mean": 0.3048610255461731,
+            "rmse": 0.12135897447392262,
+            "bias": -0.015186998356943251,
+            "pearson_correlation": 0.5052237978042647
+          }
+        }
+      }
+    },
+    "0.15": {
+      "localization": {
+        "frame_count": 4546,
+        "annotated_frame_count": 4546,
+        "annotation_coverage": 1.0,
+        "frames_without_predictions": 43,
+        "reference_boxes": 106023,
+        "predicted_boxes_on_annotated_frames": 264341,
+        "matching_metrics": {
+          "iou": {
+            "true_positives": 4380,
+            "false_positives": 259961,
+            "false_negatives": 101643,
+            "precision": 0.01656950681127786,
+            "recall": 0.04131179083783707,
+            "f1": 0.023652406821397333
+          },
+          "center": {
+            "true_positives": 51141,
+            "false_positives": 213200,
+            "false_negatives": 54882,
+            "precision": 0.19346601548757097,
+            "recall": 0.48235760165247166,
+            "f1": 0.276166150057781
+          }
+        },
+        "count_mae": 40.400791904971406,
+        "count_rmse": 50.678150785165386,
+        "count_bias": 34.82578090629124,
+        "count_pearson_correlation": 0.25531489004268754
+      },
+      "density_features": {
+        "image_count": 4546,
+        "predicted_boxes": 264341,
+        "reference_boxes": 106023,
+        "images_without_predictions": 43,
+        "feature_metrics": {
+          "object_count": {
+            "valid_images": 4546,
+            "reference_mean": 23.322261328640565,
+            "predicted_mean": 58.14804223493181,
+            "mae": 40.400791904971406,
+            "mae_over_reference_mean": 1.7322845043056696,
+            "rmse": 50.678150785165386,
+            "bias": 34.82578090629124,
+            "pearson_correlation": 0.25531489004268754
+          },
+          "bbox_area_ratio": {
+            "valid_images": 4546,
+            "reference_mean": 0.4521822599654509,
+            "predicted_mean": 0.16218916596524616,
+            "mae": 0.29027161753686437,
+            "mae_over_reference_mean": 0.6419349966516658,
+            "rmse": 0.316483656601521,
+            "bias": -0.28999309400020473,
+            "pearson_correlation": 0.7510163802843353
+          },
+          "center_spread": {
+            "valid_images": 4503,
+            "reference_mean": 0.2852230323734265,
+            "predicted_mean": 0.32270520890242604,
+            "mae": 0.05836889276990628,
+            "mae_over_reference_mean": 0.2046429851201048,
+            "rmse": 0.0697578857485292,
+            "bias": 0.03748217652899957,
+            "pearson_correlation": 0.7813871729890549
+          },
+          "mean_nearest_neighbor_distance": {
+            "valid_images": 4454,
+            "reference_mean": 0.09788763524840963,
+            "predicted_mean": 0.06002281245343616,
+            "mae": 0.05428672832367499,
+            "mae_over_reference_mean": 0.554582079604962,
+            "rmse": 0.06651789311251782,
+            "bias": -0.037864822794973475,
+            "pearson_correlation": -0.1070550163428539
+          },
+          "max_grid_fraction": {
+            "valid_images": 4546,
+            "reference_mean": 0.24088449978851112,
+            "predicted_mean": 0.24606420688952912,
+            "mae": 0.07834915634551821,
+            "mae_over_reference_mean": 0.3252561140891434,
+            "rmse": 0.13273441418209656,
+            "bias": 0.005179707101018065,
+            "pearson_correlation": 0.5368777817530472
+          }
+        }
+      }
+    },
+    "0.25": {
+      "localization": {
+        "frame_count": 4546,
+        "annotated_frame_count": 4546,
+        "annotation_coverage": 1.0,
+        "frames_without_predictions": 147,
+        "reference_boxes": 106023,
+        "predicted_boxes_on_annotated_frames": 139833,
+        "matching_metrics": {
+          "iou": {
+            "true_positives": 2877,
+            "false_positives": 136956,
+            "false_negatives": 103146,
+            "precision": 0.02057454248997018,
+            "recall": 0.02713562151608613,
+            "f1": 0.02340394377196408
+          },
+          "center": {
+            "true_positives": 34521,
+            "false_positives": 105312,
+            "false_negatives": 71502,
+            "precision": 0.2468730557164618,
+            "recall": 0.3255991624458844,
+            "f1": 0.28082292073408827
+          }
+        },
+        "count_mae": 17.44830620325561,
+        "count_rmse": 22.542671078593973,
+        "count_bias": 7.437307523097228,
+        "count_pearson_correlation": 0.25559146191321735
+      },
+      "density_features": {
+        "image_count": 4546,
+        "predicted_boxes": 139833,
+        "reference_boxes": 106023,
+        "images_without_predictions": 147,
+        "feature_metrics": {
+          "object_count": {
+            "valid_images": 4546,
+            "reference_mean": 23.322261328640565,
+            "predicted_mean": 30.759568851737793,
+            "mae": 17.44830620325561,
+            "mae_over_reference_mean": 0.7481395546249398,
+            "rmse": 22.542671078593973,
+            "bias": 7.437307523097228,
+            "pearson_correlation": 0.25559146191321735
+          },
+          "bbox_area_ratio": {
+            "valid_images": 4546,
+            "reference_mean": 0.4521822599654509,
+            "predicted_mean": 0.08722460714340048,
+            "mae": 0.36497427754339656,
+            "mae_over_reference_mean": 0.8071397528317066,
+            "rmse": 0.3937668034021934,
+            "bias": -0.3649576528220504,
+            "pearson_correlation": 0.7143696822910669
+          },
+          "center_spread": {
+            "valid_images": 4399,
+            "reference_mean": 0.2868756405739052,
+            "predicted_mean": 0.30861673040928495,
+            "mae": 0.06126174935562227,
+            "mae_over_reference_mean": 0.2135481047922574,
+            "rmse": 0.07738260628225771,
+            "bias": 0.0217410898353797,
+            "pearson_correlation": 0.7669670084903547
+          },
+          "mean_nearest_neighbor_distance": {
+            "valid_images": 4233,
+            "reference_mean": 0.09851089126742937,
+            "predicted_mean": 0.0867221205437302,
+            "mae": 0.044691297849464656,
+            "mae_over_reference_mean": 0.4536685971923688,
+            "rmse": 0.06799383209457875,
+            "bias": -0.011788770723699195,
+            "pearson_correlation": -0.1581037648814733
+          },
+          "max_grid_fraction": {
+            "valid_images": 4546,
+            "reference_mean": 0.24088449978851112,
+            "predicted_mean": 0.28327042477610687,
+            "mae": 0.10631144079866409,
+            "mae_over_reference_mean": 0.4413378232804607,
+            "rmse": 0.1827741757880514,
+            "bias": 0.04238592498759574,
+            "pearson_correlation": 0.4977378865171254
+          }
+        }
+      }
+    }
+  },
+  "selected_result": {
+    "localization": {
+      "frame_count": 4546,
+      "annotated_frame_count": 4546,
+      "annotation_coverage": 1.0,
+      "frames_without_predictions": 147,
+      "reference_boxes": 106023,
+      "predicted_boxes_on_annotated_frames": 139833,
+      "matching_metrics": {
+        "iou": {
+          "true_positives": 2877,
+          "false_positives": 136956,
+          "false_negatives": 103146,
+          "precision": 0.02057454248997018,
+          "recall": 0.02713562151608613,
+          "f1": 0.02340394377196408
+        },
+        "center": {
+          "true_positives": 34521,
+          "false_positives": 105312,
+          "false_negatives": 71502,
+          "precision": 0.2468730557164618,
+          "recall": 0.3255991624458844,
+          "f1": 0.28082292073408827
+        }
+      },
+      "count_mae": 17.44830620325561,
+      "count_rmse": 22.542671078593973,
+      "count_bias": 7.437307523097228,
+      "count_pearson_correlation": 0.25559146191321735
+    },
+    "density_features": {
+      "image_count": 4546,
+      "predicted_boxes": 139833,
+      "reference_boxes": 106023,
+      "images_without_predictions": 147,
+      "feature_metrics": {
+        "object_count": {
+          "valid_images": 4546,
+          "reference_mean": 23.322261328640565,
+          "predicted_mean": 30.759568851737793,
+          "mae": 17.44830620325561,
+          "mae_over_reference_mean": 0.7481395546249398,
+          "rmse": 22.542671078593973,
+          "bias": 7.437307523097228,
+          "pearson_correlation": 0.25559146191321735
+        },
+        "bbox_area_ratio": {
+          "valid_images": 4546,
+          "reference_mean": 0.4521822599654509,
+          "predicted_mean": 0.08722460714340048,
+          "mae": 0.36497427754339656,
+          "mae_over_reference_mean": 0.8071397528317066,
+          "rmse": 0.3937668034021934,
+          "bias": -0.3649576528220504,
+          "pearson_correlation": 0.7143696822910669
+        },
+        "center_spread": {
+          "valid_images": 4399,
+          "reference_mean": 0.2868756405739052,
+          "predicted_mean": 0.30861673040928495,
+          "mae": 0.06126174935562227,
+          "mae_over_reference_mean": 0.2135481047922574,
+          "rmse": 0.07738260628225771,
+          "bias": 0.0217410898353797,
+          "pearson_correlation": 0.7669670084903547
+        },
+        "mean_nearest_neighbor_distance": {
+          "valid_images": 4233,
+          "reference_mean": 0.09851089126742937,
+          "predicted_mean": 0.0867221205437302,
+          "mae": 0.044691297849464656,
+          "mae_over_reference_mean": 0.4536685971923688,
+          "rmse": 0.06799383209457875,
+          "bias": -0.011788770723699195,
+          "pearson_correlation": -0.1581037648814733
+        },
+        "max_grid_fraction": {
+          "valid_images": 4546,
+          "reference_mean": 0.24088449978851112,
+          "predicted_mean": 0.28327042477610687,
+          "mae": 0.10631144079866409,
+          "mae_over_reference_mean": 0.4413378232804607,
+          "rmse": 0.1827741757880514,
+          "bias": 0.04238592498759574,
+          "pearson_correlation": 0.4977378865171254
+        }
+      }
+    },
+    "stages": {
+      "early": {
+        "localization": {
+          "frame_count": 1527,
+          "annotated_frame_count": 1527,
+          "annotation_coverage": 1.0,
+          "frames_without_predictions": 141,
+          "reference_boxes": 32299,
+          "predicted_boxes_on_annotated_frames": 15133,
+          "matching_metrics": {
+            "iou": {
+              "true_positives": 203,
+              "false_positives": 14930,
+              "false_negatives": 32096,
+              "precision": 0.013414392387497523,
+              "recall": 0.006285024304158024,
+              "f1": 0.008559622195985833
+            },
+            "center": {
+              "true_positives": 4557,
+              "false_positives": 10576,
+              "false_negatives": 27742,
+              "precision": 0.3011299808365823,
+              "recall": 0.14108795937954735,
+              "f1": 0.1921487603305785
+            }
+          },
+          "count_mae": 14.660117878192535,
+          "count_rmse": 18.023669222978214,
+          "count_bias": -11.241650294695482,
+          "count_pearson_correlation": 0.0997790139546041
+        },
+        "density_features": {
+          "image_count": 1527,
+          "predicted_boxes": 15133,
+          "reference_boxes": 32299,
+          "images_without_predictions": 141,
+          "feature_metrics": {
+            "object_count": {
+              "valid_images": 1527,
+              "reference_mean": 21.15193189259987,
+              "predicted_mean": 9.910281597904389,
+              "mae": 14.660117878192535,
+              "mae_over_reference_mean": 0.6930864732654262,
+              "rmse": 18.023669222978214,
+              "bias": -11.241650294695482,
+              "pearson_correlation": 0.0997790139546041
+            },
+            "bbox_area_ratio": {
+              "valid_images": 1527,
+              "reference_mean": 0.2597457649417532,
+              "predicted_mean": 0.02111908412971309,
+              "mae": 0.2386761739248361,
+              "mae_over_reference_mean": 0.9188837938449472,
+              "rmse": 0.2700632529275821,
+              "bias": -0.23862668081204017,
+              "pearson_correlation": 0.4169548107390881
+            },
+            "center_spread": {
+              "valid_images": 1386,
+              "reference_mean": 0.22664555471082615,
+              "predicted_mean": 0.18461738264073074,
+              "mae": 0.06879153132800245,
+              "mae_over_reference_mean": 0.3035203201570513,
+              "rmse": 0.09610900895498482,
+              "bias": -0.04202817207009541,
+              "pearson_correlation": 0.3760395696530762
+            },
+            "mean_nearest_neighbor_distance": {
+              "valid_images": 1228,
+              "reference_mean": 0.07459971729961898,
+              "predicted_mean": 0.11471154302338964,
+              "mae": 0.06308314295535537,
+              "mae_over_reference_mean": 0.8456217428008614,
+              "rmse": 0.1073805150583917,
+              "bias": 0.04011182572377065,
+              "pearson_correlation": -0.02849723654926668
+            },
+            "max_grid_fraction": {
+              "valid_images": 1527,
+              "reference_mean": 0.3447767955779658,
+              "predicted_mean": 0.4218590956368282,
+              "mae": 0.20283954840706717,
+              "mae_over_reference_mean": 0.5883213458928915,
+              "rmse": 0.28859762947619355,
+              "bias": 0.07708230005886237,
+              "pearson_correlation": 0.29636436065820204
+            }
+          }
+        }
+      },
+      "late": {
+        "localization": {
+          "frame_count": 1553,
+          "annotated_frame_count": 1553,
+          "annotation_coverage": 1.0,
+          "frames_without_predictions": 6,
+          "reference_boxes": 37072,
+          "predicted_boxes_on_annotated_frames": 58815,
+          "matching_metrics": {
+            "iou": {
+              "true_positives": 1093,
+              "false_positives": 57722,
+              "false_negatives": 35979,
+              "precision": 0.01858369463572218,
+              "recall": 0.0294831678895123,
+              "f1": 0.022797668088479148
+            },
+            "center": {
+              "true_positives": 14751,
+              "false_positives": 44064,
+              "false_negatives": 22321,
+              "precision": 0.2508033664881408,
+              "recall": 0.3979013810962451,
+              "f1": 0.3076746587128599
+            }
+          },
+          "count_mae": 16.631680618158402,
+          "count_rmse": 22.53492674436983,
+          "count_bias": 14.00064391500322,
+          "count_pearson_correlation": 0.26932371441387515
+        },
+        "density_features": {
+          "image_count": 1553,
+          "predicted_boxes": 58815,
+          "reference_boxes": 37072,
+          "images_without_predictions": 6,
+          "feature_metrics": {
+            "object_count": {
+              "valid_images": 1553,
+              "reference_mean": 23.871216999356086,
+              "predicted_mean": 37.8718609143593,
+              "mae": 16.631680618158402,
+              "mae_over_reference_mean": 0.6967252913249892,
+              "rmse": 22.53492674436983,
+              "bias": 14.00064391500322,
+              "pearson_correlation": 0.26932371441387515
+            },
+            "bbox_area_ratio": {
+              "valid_images": 1553,
+              "reference_mean": 0.5258618642084615,
+              "predicted_mean": 0.10105829768045914,
+              "mae": 0.4248035665280024,
+              "mae_over_reference_mean": 0.8078234902381175,
+              "rmse": 0.4412285022396916,
+              "bias": -0.4248035665280024,
+              "pearson_correlation": 0.4592939857149393
+            },
+            "center_spread": {
+              "valid_images": 1547,
+              "reference_mean": 0.3107467832787218,
+              "predicted_mean": 0.3633479374615101,
+              "mae": 0.06144719053309738,
+              "mae_over_reference_mean": 0.19774039133973215,
+              "rmse": 0.0715897738870383,
+              "bias": 0.05260115418278824,
+              "pearson_correlation": 0.19234503191170046
+            },
+            "mean_nearest_neighbor_distance": {
+              "valid_images": 1541,
+              "reference_mean": 0.10660324680322461,
+              "predicted_mean": 0.07818011326761513,
+              "mae": 0.034106908086164414,
+              "mae_over_reference_mean": 0.31994248870413133,
+              "rmse": 0.040097870137145025,
+              "bias": -0.02842313353560947,
+              "pearson_correlation": 0.19415527194260995
+            },
+            "max_grid_fraction": {
+              "valid_images": 1553,
+              "reference_mean": 0.20220928941268387,
+              "predicted_mean": 0.2283488124366372,
+              "mae": 0.06491196256181421,
+              "mae_over_reference_mean": 0.3210137513976275,
+              "rmse": 0.10514151574855785,
+              "bias": 0.026139523023953316,
+              "pearson_correlation": 0.12560528308519092
+            }
+          }
+        }
+      },
+      "middle": {
+        "localization": {
+          "frame_count": 1466,
+          "annotated_frame_count": 1466,
+          "annotation_coverage": 1.0,
+          "frames_without_predictions": 0,
+          "reference_boxes": 36652,
+          "predicted_boxes_on_annotated_frames": 65885,
+          "matching_metrics": {
+            "iou": {
+              "true_positives": 1581,
+              "false_positives": 64304,
+              "false_negatives": 35071,
+              "precision": 0.023996357289216057,
+              "recall": 0.04313543599257885,
+              "f1": 0.03083764884870827
+            },
+            "center": {
+              "true_positives": 15213,
+              "false_positives": 50672,
+              "false_negatives": 21439,
+              "precision": 0.23090232981710557,
+              "recall": 0.4150660264105642,
+              "f1": 0.2967319114075895
+            }
+          },
+          "count_mae": 21.217598908594816,
+          "count_rmse": 26.44785598017651,
+          "count_bias": 19.940654843110504,
+          "count_pearson_correlation": 0.24648818048467278
+        },
+        "density_features": {
+          "image_count": 1466,
+          "predicted_boxes": 65885,
+          "reference_boxes": 36652,
+          "images_without_predictions": 0,
+          "feature_metrics": {
+            "object_count": {
+              "valid_images": 1466,
+              "reference_mean": 25.00136425648022,
+              "predicted_mean": 44.94201909959072,
+              "mae": 21.217598908594816,
+              "mae_over_reference_mean": 0.8486576448761323,
+              "rmse": 26.44785598017651,
+              "bias": 19.940654843110504,
+              "pearson_correlation": 0.24648818048467278
+            },
+            "bbox_area_ratio": {
+              "valid_images": 1466,
+              "reference_mean": 0.5745738715014611,
+              "predicted_mean": 0.14142611617331086,
+              "mae": 0.43314775532815025,
+              "mae_over_reference_mean": 0.7538591237994517,
+              "rmse": 0.4456514215450852,
+              "bias": -0.43314775532815025,
+              "pearson_correlation": 0.4067523877565627
+            },
+            "center_spread": {
+              "valid_images": 1466,
+              "reference_mean": 0.3186288747088821,
+              "predicted_mean": 0.36809416471857803,
+              "mae": 0.05394718229199819,
+              "mae_over_reference_mean": 0.16931040019925211,
+              "rmse": 0.061863875489096574,
+              "bias": 0.049465290009695864,
+              "pearson_correlation": 0.17925487449290628
+            },
+            "mean_nearest_neighbor_distance": {
+              "valid_images": 1464,
+              "reference_mean": 0.1100495536662072,
+              "predicted_mean": 0.07223593366358776,
+              "mae": 0.0404053407696913,
+              "mae_over_reference_mean": 0.3671558804522306,
+              "rmse": 0.04475659019293088,
+              "bias": -0.03781362000261944,
+              "pearson_correlation": 0.15278402709340505
+            },
+            "max_grid_fraction": {
+              "valid_images": 1466,
+              "reference_mean": 0.17363966080021792,
+              "predicted_mean": 0.19709604794041433,
+              "mae": 0.04962315252021683,
+              "mae_over_reference_mean": 0.28578236269023255,
+              "rmse": 0.0716012680160384,
+              "bias": 0.023456387140196377,
+              "pearson_correlation": 0.22552880407292145
+            }
+          }
+        }
+      }
+    }
+  },
+  "monitoring_integration_gate": {
+    "minimum_center_f1": 0.5,
+    "observed_center_f1": 0.28082292073408827,
+    "passed": false,
+    "decision": "block predicted monitoring",
+    "reason": "Detector transfer is too weak; fine-tune before generating risk alerts."
+  },
+  "elapsed_seconds": 379.639248374966,
+  "claim_boundary": "This validates cross-domain chicken localization and static density feature transfer on official Korean laying-hen community images. It is not a piling/smothering event evaluation: images are not continuous incident clips, actionValue is not used as an incident target, and threshold selection uses the same Validation images."
+}

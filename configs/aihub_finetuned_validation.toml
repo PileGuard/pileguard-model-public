@@ -1,0 +1,27 @@
+[model]
+weights = "weights/aihub-laying-hen-yolo26n/best.pt"
+detector_label = "AI Hub laying-hen fine-tuned YOLO26n"
+gate_pass_reason = "Same-domain laying-hen localization meets the configured integration gate; independent field validation is still required."
+gate_fail_reason = "Same-domain laying-hen localization is too weak for predicted monitoring."
+claim_boundary = "This validates same-domain static Korean laying-hen localization and density features. Training, checkpoint selection, threshold selection, and reporting use the official AI Hub Training/Validation data, so this is not an independent field-farm test. It is not a piling/smothering event evaluation: images are not continuous incident clips and actionValue is not used as an incident target."
+image_size = 480
+batch_size = 16
+device = "auto"
+
+[evaluation]
+minimum_confidence = 0.05
+confidence_thresholds = [0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.50, 0.60, 0.70]
+inference_iou_threshold = 0.70
+iou_threshold = 0.50
+center_distance_threshold = 0.05
+max_detections = 1500
+
+[features]
+grid_rows = 4
+grid_columns = 4
+
+[quality]
+minimum_center_f1_for_monitoring = 0.50
+
+[output]
+artifact_dir = "artifacts/aihub-laying-hen-yolo26n/validation"

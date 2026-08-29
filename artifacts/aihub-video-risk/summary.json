@@ -1,0 +1,191 @@
+{
+  "disclaimer": "End-to-end detector-to-risk functional test only. Input videos have no official piling/smothering incident labels, so alert states are not validated incidents, false alarms, lead times, or calibrated probabilities.",
+  "event_labels_available": false,
+  "risk_index_is_probability": false,
+  "feature_mapping": {
+    "density": "Positive camera-relative change in bbox_area_ratio.",
+    "inflow": "Positive object-count and tracked/flow-speed change used as an inflow proxy.",
+    "proximity": "Negative camera-relative change in mean nearest-neighbor distance.",
+    "convergence": "Positive camera-relative change in optical-flow convergence.",
+    "directional_coherence": "Positive tracked or optical-flow coherence change.",
+    "corner": "Positive change in the most occupied spatial grid fraction.",
+    "context": "Fixed at zero because NESTLER has no worker, door, or blind-spot metadata."
+  },
+  "jobs": {
+    "job_000004": {
+      "site": "Bulgaria",
+      "frame_count": 400,
+      "calibration_frame_count": 60,
+      "monitoring_frame_count": 340,
+      "available_monitoring_frames": 340,
+      "monitoring_coverage": 1.0,
+      "maximum_risk_index": 43.49836790889901,
+      "first_alert_seconds": {
+        "watch": 9.8,
+        "warning": null,
+        "critical": null
+      },
+      "alert_frame_counts": {
+        "normal": 333,
+        "watch": 7,
+        "warning": 0,
+        "critical": 0,
+        "unavailable": 0
+      }
+    },
+    "job_000007": {
+      "site": "Bulgaria",
+      "frame_count": 400,
+      "calibration_frame_count": 60,
+      "monitoring_frame_count": 340,
+      "available_monitoring_frames": 340,
+      "monitoring_coverage": 1.0,
+      "maximum_risk_index": 64.43493950377923,
+      "first_alert_seconds": {
+        "watch": 17.05,
+        "warning": 17.45,
+        "critical": null
+      },
+      "alert_frame_counts": {
+        "normal": 315,
+        "watch": 21,
+        "warning": 4,
+        "critical": 0,
+        "unavailable": 0
+      }
+    },
+    "job_000008": {
+      "site": "Bulgaria",
+      "frame_count": 400,
+      "calibration_frame_count": 60,
+      "monitoring_frame_count": 340,
+      "available_monitoring_frames": 340,
+      "monitoring_coverage": 1.0,
+      "maximum_risk_index": 44.85531000885797,
+      "first_alert_seconds": {
+        "watch": 7.0,
+        "warning": null,
+        "critical": null
+      },
+      "alert_frame_counts": {
+        "normal": 299,
+        "watch": 41,
+        "warning": 0,
+        "critical": 0,
+        "unavailable": 0
+      }
+    },
+    "job_000009": {
+      "site": "Rwanda",
+      "frame_count": 392,
+      "calibration_frame_count": 60,
+      "monitoring_frame_count": 332,
+      "available_monitoring_frames": 332,
+      "monitoring_coverage": 1.0,
+      "maximum_risk_index": 38.65808263960511,
+      "first_alert_seconds": {
+        "watch": null,
+        "warning": null,
+        "critical": null
+      },
+      "alert_frame_counts": {
+        "normal": 332,
+        "watch": 0,
+        "warning": 0,
+        "critical": 0,
+        "unavailable": 0
+      }
+    },
+    "job_000010": {
+      "site": "Rwanda",
+      "frame_count": 400,
+      "calibration_frame_count": 60,
+      "monitoring_frame_count": 340,
+      "available_monitoring_frames": 340,
+      "monitoring_coverage": 1.0,
+      "maximum_risk_index": 41.498768402814505,
+      "first_alert_seconds": {
+        "watch": 6.066666666666666,
+        "warning": null,
+        "critical": null
+      },
+      "alert_frame_counts": {
+        "normal": 329,
+        "watch": 11,
+        "warning": 0,
+        "critical": 0,
+        "unavailable": 0
+      }
+    },
+    "job_000011": {
+      "site": "Rwanda",
+      "frame_count": 400,
+      "calibration_frame_count": 60,
+      "monitoring_frame_count": 340,
+      "available_monitoring_frames": 340,
+      "monitoring_coverage": 1.0,
+      "maximum_risk_index": 39.142513188721786,
+      "first_alert_seconds": {
+        "watch": null,
+        "warning": null,
+        "critical": null
+      },
+      "alert_frame_counts": {
+        "normal": 340,
+        "watch": 0,
+        "warning": 0,
+        "critical": 0,
+        "unavailable": 0
+      }
+    }
+  },
+  "source_detector": "AI Hub laying-hen fine-tuned YOLO26n",
+  "detector_confidence_threshold": 0.2,
+  "detector_checkpoint": "weights/aihub-laying-hen-yolo26n/best.pt",
+  "source_videos": [
+    "job_000004_400frames.mp4",
+    "job_000007_400frames.mp4",
+    "job_000008_400frames.mp4",
+    "job_000009_400frames.mp4",
+    "job_000010_400frames.mp4",
+    "job_000011_400frames.mp4"
+  ],
+  "source": {
+    "dataset": "NESTLER Poultry Behaviour Analytics Detection Dataset",
+    "doi": "10.5281/zenodo.20924893",
+    "license": "CC BY 4.0",
+    "event_labels_available": false
+  },
+  "tracking_features_available": false,
+  "count_calibration_required": true,
+  "config": {
+    "video": {
+      "frame_stride": 1,
+      "max_frames": 400
+    },
+    "calibration": {
+      "frames": 60,
+      "minimum_samples": 20,
+      "minimum_scale_ratio": 0.05,
+      "saturation_iqr": 3.0
+    },
+    "quality": {
+      "minimum_valid_evidence": 4,
+      "optional_baseline_features": [
+        "mean_nearest_neighbor_distance",
+        "tracked_speed_per_second",
+        "tracked_coherence",
+        "flow_speed_per_second",
+        "flow_convergence_per_second",
+        "flow_coherence"
+      ]
+    },
+    "risk": {
+      "smoothing_alpha": 0.12,
+      "watch_threshold": 40.0,
+      "warning_threshold": 60.0,
+      "critical_threshold": 80.0,
+      "release_margin": 5.0
+    }
+  }
+}

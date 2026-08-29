@@ -1,0 +1,20 @@
+[input]
+nestler_config = "configs/nestler_features.toml"
+
+[model]
+weights = "weights/pio-yolo26n/best.pt"
+image_size = 480
+device = "auto"
+
+[evaluation]
+minimum_confidence = 0.01
+confidence_thresholds = [0.05, 0.10, 0.15, 0.25]
+iou_threshold = 0.5
+center_distance_threshold = 0.05
+max_detections = 1500
+
+[quality]
+minimum_center_f1_for_monitoring = 0.5
+
+[output]
+artifact_dir = "artifacts/nestler-detector-transfer"

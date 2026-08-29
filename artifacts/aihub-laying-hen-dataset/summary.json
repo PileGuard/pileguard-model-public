@@ -1,0 +1,133 @@
+{
+  "status": "ready_after_deduplication",
+  "source": "AI Hub dataset 575 official Training and Validation community-image subset",
+  "license_note": "Use remains subject to the AI Hub dataset terms accepted at download.",
+  "dataset": {
+    "class_names": [
+      "layer-chicken"
+    ],
+    "train_split": "train",
+    "validation_split": "val",
+    "splits": {
+      "train": {
+        "image_count": 36423,
+        "source_box_count": 851189,
+        "usable_box_count": 851187,
+        "duplicate_box_count": 498,
+        "training_box_count": 850689,
+        "invalid_box_count": 2,
+        "clipped_box_count": 0,
+        "duplicate_image_content_count": 695,
+        "stages": {
+          "early": {
+            "image_count": 12216,
+            "source_box_count": 259801,
+            "usable_box_count": 259801,
+            "duplicate_box_count": 498,
+            "training_box_count": 259303,
+            "invalid_box_count": 0,
+            "clipped_box_count": 0,
+            "unique_image_hashes": 12216
+          },
+          "middle": {
+            "image_count": 11761,
+            "source_box_count": 294105,
+            "usable_box_count": 294105,
+            "duplicate_box_count": 0,
+            "training_box_count": 294105,
+            "invalid_box_count": 0,
+            "clipped_box_count": 0,
+            "unique_image_hashes": 11067
+          },
+          "late": {
+            "image_count": 12446,
+            "source_box_count": 297283,
+            "usable_box_count": 297281,
+            "duplicate_box_count": 0,
+            "training_box_count": 297281,
+            "invalid_box_count": 2,
+            "clipped_box_count": 0,
+            "unique_image_hashes": 12445
+          }
+        }
+      },
+      "val": {
+        "image_count": 4546,
+        "source_box_count": 106023,
+        "usable_box_count": 106023,
+        "duplicate_box_count": 35,
+        "training_box_count": 105988,
+        "invalid_box_count": 0,
+        "clipped_box_count": 1,
+        "duplicate_image_content_count": 8,
+        "stages": {
+          "early": {
+            "image_count": 1527,
+            "source_box_count": 32299,
+            "usable_box_count": 32299,
+            "duplicate_box_count": 35,
+            "training_box_count": 32264,
+            "invalid_box_count": 0,
+            "clipped_box_count": 1,
+            "unique_image_hashes": 1527
+          },
+          "middle": {
+            "image_count": 1466,
+            "source_box_count": 36652,
+            "usable_box_count": 36652,
+            "duplicate_box_count": 0,
+            "training_box_count": 36652,
+            "invalid_box_count": 0,
+            "clipped_box_count": 0,
+            "unique_image_hashes": 1458
+          },
+          "late": {
+            "image_count": 1553,
+            "source_box_count": 37072,
+            "usable_box_count": 37072,
+            "duplicate_box_count": 0,
+            "training_box_count": 37072,
+            "invalid_box_count": 0,
+            "clipped_box_count": 0,
+            "unique_image_hashes": 1553
+          }
+        }
+      }
+    },
+    "official_count_contract": {
+      "enforced": true,
+      "expected": {
+        "train": {
+          "image_count": 36423,
+          "source_box_count": 851189
+        },
+        "val": {
+          "image_count": 4546,
+          "source_box_count": 106023
+        }
+      },
+      "ok": true
+    }
+  },
+  "raw_leakage_audit": {
+    "training_validation_filename_overlap_count": 0,
+    "training_validation_content_overlap_count": 180,
+    "within_split_duplicate_content_count": 703,
+    "within_split_duplicate_label_conflict_group_count": 688,
+    "training_validation_label_conflict_group_count": 180,
+    "per_file_examples_published": false
+  },
+  "selected_dataset": {
+    "policy": "Keep one deterministic copy per image hash in Validation; exclude every Training image hash present in Validation; then keep one copy per remaining Training hash.",
+    "train_manifest": "manifests/train-images.txt",
+    "validation_manifest": "manifests/val-images.txt",
+    "train_image_count": 35548,
+    "validation_image_count": 4538,
+    "excluded_train_image_count": 875,
+    "excluded_validation_image_count": 8,
+    "training_validation_content_overlap_count": 0,
+    "training_validation_filename_overlap_count": 0
+  },
+  "quality_policy": "Non-positive official boxes and exact duplicate boxes within an image are recorded and excluded; clipped boxes remain after clipping to image bounds. Exact duplicate image content is retained on disk for audit but excluded from the selected training manifests.",
+  "claim_boundary": "These static community images validate laying-hen detection and spatial-density features only. They do not contain continuous piling/smothering incident timing."
+}

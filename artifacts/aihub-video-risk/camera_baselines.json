@@ -1,0 +1,362 @@
+{
+  "job_000004": {
+    "object_count": {
+      "valid_count": 60,
+      "median": 8.0,
+      "q25": 7.0,
+      "q75": 9.0,
+      "iqr": 2.0,
+      "effective_iqr": 2.0
+    },
+    "bbox_area_ratio": {
+      "valid_count": 60,
+      "median": 0.08736286998018666,
+      "q25": 0.07460791368751754,
+      "q75": 0.10414941315596471,
+      "iqr": 0.02954149946844717,
+      "effective_iqr": 0.02954149946844717
+    },
+    "mean_nearest_neighbor_distance": {
+      "valid_count": 60,
+      "median": 0.2458982855311481,
+      "q25": 0.2039059958237903,
+      "q75": 0.27827854242510897,
+      "iqr": 0.07437254660131867,
+      "effective_iqr": 0.07437254660131867
+    },
+    "max_grid_fraction": {
+      "valid_count": 60,
+      "median": 0.25,
+      "q25": 0.24305555555555555,
+      "q75": 0.2857142857142857,
+      "iqr": 0.042658730158730146,
+      "effective_iqr": 0.042658730158730146
+    },
+    "tracked_speed_per_second": null,
+    "tracked_coherence": null,
+    "flow_speed_per_second": {
+      "valid_count": 59,
+      "median": 0.015396255999803543,
+      "q25": 0.005937982350587845,
+      "q75": 0.04241611063480377,
+      "iqr": 0.03647812828421593,
+      "effective_iqr": 0.03647812828421593
+    },
+    "flow_convergence_per_second": {
+      "valid_count": 59,
+      "median": 0.02870936505496502,
+      "q25": 0.007665145210921764,
+      "q75": 0.1083841510117054,
+      "iqr": 0.10071900580078363,
+      "effective_iqr": 0.10071900580078363
+    },
+    "flow_coherence": {
+      "valid_count": 59,
+      "median": 0.6188794589946468,
+      "q25": 0.41437200189858214,
+      "q75": 0.8539337494024475,
+      "iqr": 0.43956174750386534,
+      "effective_iqr": 0.43956174750386534
+    }
+  },
+  "job_000007": {
+    "object_count": {
+      "valid_count": 60,
+      "median": 5.0,
+      "q25": 5.0,
+      "q75": 6.0,
+      "iqr": 1.0,
+      "effective_iqr": 1.0
+    },
+    "bbox_area_ratio": {
+      "valid_count": 60,
+      "median": 0.0685770383096428,
+      "q25": 0.061390394183913316,
+      "q75": 0.0811760870751192,
+      "iqr": 0.01978569289120588,
+      "effective_iqr": 0.01978569289120588
+    },
+    "mean_nearest_neighbor_distance": {
+      "valid_count": 60,
+      "median": 0.30642018237706836,
+      "q25": 0.19076236805433305,
+      "q75": 0.367604264158574,
+      "iqr": 0.17684189610424095,
+      "effective_iqr": 0.17684189610424095
+    },
+    "max_grid_fraction": {
+      "valid_count": 60,
+      "median": 0.3333333333333333,
+      "q25": 0.2,
+      "q75": 0.4,
+      "iqr": 0.2,
+      "effective_iqr": 0.2
+    },
+    "tracked_speed_per_second": null,
+    "tracked_coherence": null,
+    "flow_speed_per_second": {
+      "valid_count": 59,
+      "median": 0.0016187616856768727,
+      "q25": 0.0010810189414769411,
+      "q75": 0.0033736734185367823,
+      "iqr": 0.002292654477059841,
+      "effective_iqr": 0.002292654477059841
+    },
+    "flow_convergence_per_second": {
+      "valid_count": 59,
+      "median": 0.0008418792858719826,
+      "q25": 0.0,
+      "q75": 0.008366516325622797,
+      "iqr": 0.008366516325622797,
+      "effective_iqr": 0.008366516325622797
+    },
+    "flow_coherence": {
+      "valid_count": 59,
+      "median": 0.4306090374550527,
+      "q25": 0.2735255212847063,
+      "q75": 0.5953021905824206,
+      "iqr": 0.3217766692977143,
+      "effective_iqr": 0.3217766692977143
+    }
+  },
+  "job_000008": {
+    "object_count": {
+      "valid_count": 60,
+      "median": 4.0,
+      "q25": 3.0,
+      "q75": 5.0,
+      "iqr": 2.0,
+      "effective_iqr": 2.0
+    },
+    "bbox_area_ratio": {
+      "valid_count": 60,
+      "median": 0.07396755226694789,
+      "q25": 0.06620583962681267,
+      "q75": 0.07824571926761228,
+      "iqr": 0.012039879640799611,
+      "effective_iqr": 0.012039879640799611
+    },
+    "mean_nearest_neighbor_distance": {
+      "valid_count": 58,
+      "median": 0.4165078259640568,
+      "q25": 0.34650378652609254,
+      "q75": 0.5042447853488641,
+      "iqr": 0.15774099882277154,
+      "effective_iqr": 0.15774099882277154
+    },
+    "max_grid_fraction": {
+      "valid_count": 60,
+      "median": 0.3333333333333333,
+      "q25": 0.2,
+      "q75": 0.4,
+      "iqr": 0.2,
+      "effective_iqr": 0.2
+    },
+    "tracked_speed_per_second": null,
+    "tracked_coherence": null,
+    "flow_speed_per_second": {
+      "valid_count": 59,
+      "median": 0.0009379162802360952,
+      "q25": 0.0006599605258088559,
+      "q75": 0.0012234007008373737,
+      "iqr": 0.0005634401750285178,
+      "effective_iqr": 0.0005634401750285178
+    },
+    "flow_convergence_per_second": {
+      "valid_count": 59,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 5.519614205695689e-06,
+      "iqr": 5.519614205695689e-06,
+      "effective_iqr": 5.519614205695689e-06
+    },
+    "flow_coherence": {
+      "valid_count": 59,
+      "median": 0.4298516520857572,
+      "q25": 0.308882977452124,
+      "q75": 0.5760941787612432,
+      "iqr": 0.26721120130911924,
+      "effective_iqr": 0.26721120130911924
+    }
+  },
+  "job_000009": {
+    "object_count": {
+      "valid_count": 60,
+      "median": 12.0,
+      "q25": 11.0,
+      "q75": 13.25,
+      "iqr": 2.25,
+      "effective_iqr": 2.25
+    },
+    "bbox_area_ratio": {
+      "valid_count": 60,
+      "median": 0.12714790300455836,
+      "q25": 0.11185232578171592,
+      "q75": 0.14872189221036158,
+      "iqr": 0.03686956642864567,
+      "effective_iqr": 0.03686956642864567
+    },
+    "mean_nearest_neighbor_distance": {
+      "valid_count": 60,
+      "median": 0.10613207875096634,
+      "q25": 0.09404034491148137,
+      "q75": 0.11622539926936425,
+      "iqr": 0.022185054357882872,
+      "effective_iqr": 0.022185054357882872
+    },
+    "max_grid_fraction": {
+      "valid_count": 60,
+      "median": 0.25,
+      "q25": 0.22664835164835165,
+      "q75": 0.2727272727272727,
+      "iqr": 0.04607892107892106,
+      "effective_iqr": 0.04607892107892106
+    },
+    "tracked_speed_per_second": null,
+    "tracked_coherence": null,
+    "flow_speed_per_second": {
+      "valid_count": 59,
+      "median": 0.006907214410603046,
+      "q25": 0.005106583936139941,
+      "q75": 0.009277510456740856,
+      "iqr": 0.004170926520600915,
+      "effective_iqr": 0.004170926520600915
+    },
+    "flow_convergence_per_second": {
+      "valid_count": 59,
+      "median": 0.01625846140086651,
+      "q25": 0.0,
+      "q75": 0.03399538807570934,
+      "iqr": 0.03399538807570934,
+      "effective_iqr": 0.03399538807570934
+    },
+    "flow_coherence": {
+      "valid_count": 59,
+      "median": 0.5305107939439743,
+      "q25": 0.378463689619969,
+      "q75": 0.6681499854411308,
+      "iqr": 0.2896862958211618,
+      "effective_iqr": 0.2896862958211618
+    }
+  },
+  "job_000010": {
+    "object_count": {
+      "valid_count": 60,
+      "median": 12.0,
+      "q25": 11.0,
+      "q75": 14.0,
+      "iqr": 3.0,
+      "effective_iqr": 3.0
+    },
+    "bbox_area_ratio": {
+      "valid_count": 60,
+      "median": 0.11933742646044154,
+      "q25": 0.11102927065695607,
+      "q75": 0.1451782743169623,
+      "iqr": 0.03414900366000624,
+      "effective_iqr": 0.03414900366000624
+    },
+    "mean_nearest_neighbor_distance": {
+      "valid_count": 60,
+      "median": 0.10855056068801221,
+      "q25": 0.09304257912084873,
+      "q75": 0.11656268456945926,
+      "iqr": 0.023520105448610523,
+      "effective_iqr": 0.023520105448610523
+    },
+    "max_grid_fraction": {
+      "valid_count": 60,
+      "median": 0.25,
+      "q25": 0.23076923076923078,
+      "q75": 0.2727272727272727,
+      "iqr": 0.041958041958041925,
+      "effective_iqr": 0.041958041958041925
+    },
+    "tracked_speed_per_second": null,
+    "tracked_coherence": null,
+    "flow_speed_per_second": {
+      "valid_count": 59,
+      "median": 0.010110869072377682,
+      "q25": 0.007398851681500673,
+      "q75": 0.013322795275598764,
+      "iqr": 0.005923943594098091,
+      "effective_iqr": 0.005923943594098091
+    },
+    "flow_convergence_per_second": {
+      "valid_count": 59,
+      "median": 0.006046759430319071,
+      "q25": 0.0,
+      "q75": 0.024538210593163967,
+      "iqr": 0.024538210593163967,
+      "effective_iqr": 0.024538210593163967
+    },
+    "flow_coherence": {
+      "valid_count": 59,
+      "median": 0.39407486349027615,
+      "q25": 0.320952787922139,
+      "q75": 0.5175591022295094,
+      "iqr": 0.1966063143073704,
+      "effective_iqr": 0.1966063143073704
+    }
+  },
+  "job_000011": {
+    "object_count": {
+      "valid_count": 60,
+      "median": 15.0,
+      "q25": 14.75,
+      "q75": 16.0,
+      "iqr": 1.25,
+      "effective_iqr": 1.25
+    },
+    "bbox_area_ratio": {
+      "valid_count": 60,
+      "median": 0.17328408153916802,
+      "q25": 0.16123400214421144,
+      "q75": 0.18228439381506054,
+      "iqr": 0.0210503916708491,
+      "effective_iqr": 0.0210503916708491
+    },
+    "mean_nearest_neighbor_distance": {
+      "valid_count": 60,
+      "median": 0.09385336335027715,
+      "q25": 0.08952041537746538,
+      "q75": 0.10102620576270092,
+      "iqr": 0.01150579038523554,
+      "effective_iqr": 0.01150579038523554
+    },
+    "max_grid_fraction": {
+      "valid_count": 60,
+      "median": 0.21428571428571427,
+      "q25": 0.2,
+      "q75": 0.25,
+      "iqr": 0.04999999999999999,
+      "effective_iqr": 0.04999999999999999
+    },
+    "tracked_speed_per_second": null,
+    "tracked_coherence": null,
+    "flow_speed_per_second": {
+      "valid_count": 59,
+      "median": 0.015312040224671364,
+      "q25": 0.008488935884088278,
+      "q75": 0.024693144485354424,
+      "iqr": 0.016204208601266146,
+      "effective_iqr": 0.016204208601266146
+    },
+    "flow_convergence_per_second": {
+      "valid_count": 59,
+      "median": 0.0,
+      "q25": 0.0,
+      "q75": 0.01771987695246935,
+      "iqr": 0.01771987695246935,
+      "effective_iqr": 0.01771987695246935
+    },
+    "flow_coherence": {
+      "valid_count": 59,
+      "median": 0.5370231903326254,
+      "q25": 0.3460580064260831,
+      "q75": 0.7698354139510595,
+      "iqr": 0.4237774075249764,
+      "effective_iqr": 0.4237774075249764
+    }
+  }
+}

@@ -1,0 +1,57 @@
+[model]
+weights = "weights/aihub-laying-hen-yolo26n/best.pt"
+detector_label = "AI Hub laying-hen fine-tuned YOLO26n"
+image_size = 480
+confidence_threshold = 0.20
+inference_iou_threshold = 0.70
+max_detections = 1500
+device = "auto"
+
+[video]
+frame_stride = 1
+max_frames = 400
+
+[source]
+dataset = "NESTLER Poultry Behaviour Analytics Detection Dataset"
+doi = "10.5281/zenodo.20924893"
+license = "CC BY 4.0"
+event_labels_available = false
+
+[features]
+resize_width = 480
+resize_height = 270
+grid_rows = 4
+grid_columns = 4
+flow_pyramid_scale = 0.5
+flow_levels = 3
+flow_window_size = 15
+flow_iterations = 3
+flow_poly_n = 5
+flow_poly_sigma = 1.2
+
+[calibration]
+frames = 60
+minimum_samples = 20
+minimum_scale_ratio = 0.05
+saturation_iqr = 3.0
+
+[quality]
+minimum_valid_evidence = 4
+optional_baseline_features = [
+  "mean_nearest_neighbor_distance",
+  "tracked_speed_per_second",
+  "tracked_coherence",
+  "flow_speed_per_second",
+  "flow_convergence_per_second",
+  "flow_coherence",
+]
+
+[risk]
+smoothing_alpha = 0.12
+watch_threshold = 40.0
+warning_threshold = 60.0
+critical_threshold = 80.0
+release_margin = 5.0
+
+[output]
+artifact_dir = "artifacts/aihub-video-risk"

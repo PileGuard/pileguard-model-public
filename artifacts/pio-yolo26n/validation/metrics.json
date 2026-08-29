@@ -1,0 +1,109 @@
+{
+  "status": "official-validation",
+  "architecture": "yolo26n.yaml",
+  "dataset": {
+    "validation_images": 452
+  },
+  "image_size": 320,
+  "batch_size": 4,
+  "device": "cpu",
+  "elapsed_seconds": 21.413293457997497,
+  "metrics": {
+    "precision": 0.7078715874345117,
+    "recall": 0.6132108018031652,
+    "map50": 0.6362371899575672,
+    "map50_95": 0.28231301645817164,
+    "fitness": 0.28231301645817164
+  },
+  "grouped_metrics": {
+    "environment-commercial": {
+      "image_count": 268,
+      "metrics": {
+        "precision": 0.7113852472484186,
+        "recall": 0.6215033794098035,
+        "map50": 0.6432722578921087,
+        "map50_95": 0.286022156198628,
+        "fitness": 0.286022156198628
+      }
+    },
+    "environment-prototype": {
+      "image_count": 184,
+      "metrics": {
+        "precision": 0.6864660614612133,
+        "recall": 0.5651784113322574,
+        "map50": 0.5920570983916792,
+        "map50_95": 0.26194105744556484,
+        "fitness": 0.26194105744556484
+      }
+    },
+    "week-1": {
+      "image_count": 63,
+      "metrics": {
+        "precision": 0.5324348632012973,
+        "recall": 0.3488791548569956,
+        "map50": 0.30521978313858356,
+        "map50_95": 0.08649157191445636,
+        "fitness": 0.08649157191445636
+      }
+    },
+    "week-2": {
+      "image_count": 79,
+      "metrics": {
+        "precision": 0.6799460603773657,
+        "recall": 0.5532020684168656,
+        "map50": 0.5499388488610786,
+        "map50_95": 0.196122956778153,
+        "fitness": 0.196122956778153
+      }
+    },
+    "week-3": {
+      "image_count": 91,
+      "metrics": {
+        "precision": 0.7431639124174009,
+        "recall": 0.6531725222863136,
+        "map50": 0.6876073489364884,
+        "map50_95": 0.29876568165365114,
+        "fitness": 0.29876568165365114
+      }
+    },
+    "week-4": {
+      "image_count": 127,
+      "metrics": {
+        "precision": 0.7544244916608467,
+        "recall": 0.6894921960870521,
+        "map50": 0.7432166956220381,
+        "map50_95": 0.3608205934859037,
+        "fitness": 0.3608205934859037
+      }
+    },
+    "week-5": {
+      "image_count": 18,
+      "metrics": {
+        "precision": 0.8056585117758212,
+        "recall": 0.7203444260462186,
+        "map50": 0.8020144956940387,
+        "map50_95": 0.43776751331847885,
+        "fitness": 0.43776751331847885
+      }
+    },
+    "week-6": {
+      "image_count": 74,
+      "metrics": {
+        "precision": 0.7619439210473085,
+        "recall": 0.7193941888507983,
+        "map50": 0.7938637377698508,
+        "map50_95": 0.43312165174910167,
+        "fitness": 0.43312165174910167
+      }
+    }
+  },
+  "evidence_plots": [
+    "confusion_matrix.png",
+    "confusion_matrix_normalized.png",
+    "BoxF1_curve.png",
+    "BoxP_curve.png",
+    "BoxPR_curve.png",
+    "BoxR_curve.png"
+  ],
+  "claim_boundary": "PIO is an overseas broiler detection dataset without Piling event labels; metrics validate chicken detection only."
+}

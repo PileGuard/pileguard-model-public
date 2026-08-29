@@ -1,0 +1,12 @@
+[data]
+dataset_path = "extracted/pio_v1/data"
+splits = ["train", "val"]
+
+[features]
+expected_class_id = 0
+grid_rows = 4
+grid_columns = 4
+top_crowded_images = 10
+
+[output]
+artifact_dir = "artifacts/pio-features"

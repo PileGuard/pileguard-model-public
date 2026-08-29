@@ -1,0 +1,28 @@
+{
+  "status": "baseline",
+  "architecture": "yolo26n.yaml",
+  "pretrained": true,
+  "dataset": {
+    "train_images": 1035,
+    "validation_images": 452
+  },
+  "epochs": 5,
+  "image_size": 320,
+  "batch_size": 4,
+  "device": "cpu",
+  "elapsed_seconds": 656.0309954160475,
+  "validation_metrics": {
+    "precision": 0.707871604195098,
+    "recall": 0.61321085150537,
+    "map50": 0.6362371873775583,
+    "map50_95": 0.28231233781152826,
+    "fitness": 0.28231233781152826
+  },
+  "evidence_files": [
+    "results.csv",
+    "results.png",
+    "labels.jpg"
+  ],
+  "checkpoint": "weights/pio-yolo26n/best.pt",
+  "claim_boundary": "PIO is an overseas broiler detection dataset without Piling event labels; metrics validate chicken detection only."
+}

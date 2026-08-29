@@ -1,0 +1,161 @@
+{
+  "disclaimer": "Camera-relative anomaly demonstration only. NESTLER has no piling-event labels, so alerts are not validated incident detections or calibrated probabilities.",
+  "event_labels_available": false,
+  "risk_index_is_probability": false,
+  "feature_mapping": {
+    "density": "Positive camera-relative change in bbox_area_ratio.",
+    "inflow": "Positive object-count and tracked/flow-speed change used as an inflow proxy.",
+    "proximity": "Negative camera-relative change in mean nearest-neighbor distance.",
+    "convergence": "Positive camera-relative change in optical-flow convergence.",
+    "directional_coherence": "Positive tracked or optical-flow coherence change.",
+    "corner": "Positive change in the most occupied spatial grid fraction.",
+    "context": "Fixed at zero because NESTLER has no worker, door, or blind-spot metadata."
+  },
+  "jobs": {
+    "job_000004": {
+      "site": "Bulgaria",
+      "frame_count": 400,
+      "calibration_frame_count": 60,
+      "monitoring_frame_count": 340,
+      "available_monitoring_frames": 340,
+      "monitoring_coverage": 1.0,
+      "maximum_risk_index": 62.52054868773172,
+      "first_alert_seconds": {
+        "watch": 4.839173962264152,
+        "warning": 10.103769811320756,
+        "critical": null
+      },
+      "alert_frame_counts": {
+        "normal": 173,
+        "watch": 130,
+        "warning": 37,
+        "critical": 0,
+        "unavailable": 0
+      }
+    },
+    "job_000007": {
+      "site": "Bulgaria",
+      "frame_count": 400,
+      "calibration_frame_count": 60,
+      "monitoring_frame_count": 340,
+      "available_monitoring_frames": 340,
+      "monitoring_coverage": 1.0,
+      "maximum_risk_index": 92.50797262420932,
+      "first_alert_seconds": {
+        "watch": 5.174679487179487,
+        "warning": 13.971634615384616,
+        "critical": 18.99107371794872
+      },
+      "alert_frame_counts": {
+        "normal": 74,
+        "watch": 189,
+        "warning": 44,
+        "critical": 33,
+        "unavailable": 0
+      }
+    },
+    "job_000008": {
+      "site": "Bulgaria",
+      "frame_count": 400,
+      "calibration_frame_count": 60,
+      "monitoring_frame_count": 340,
+      "available_monitoring_frames": 293,
+      "monitoring_coverage": 0.861764705882353,
+      "maximum_risk_index": 48.99639785244459,
+      "first_alert_seconds": {
+        "watch": 5.058602419274218,
+        "warning": null,
+        "critical": null
+      },
+      "alert_frame_counts": {
+        "normal": 78,
+        "watch": 215,
+        "warning": 0,
+        "critical": 0,
+        "unavailable": 47
+      }
+    },
+    "job_000009": {
+      "site": "Rwanda",
+      "frame_count": 392,
+      "calibration_frame_count": 60,
+      "monitoring_frame_count": 332,
+      "available_monitoring_frames": 297,
+      "monitoring_coverage": 0.8945783132530121,
+      "maximum_risk_index": 40.492576086501224,
+      "first_alert_seconds": {
+        "watch": 14.942982879818594,
+        "warning": null,
+        "critical": null
+      },
+      "alert_frame_counts": {
+        "normal": 294,
+        "watch": 3,
+        "warning": 0,
+        "critical": 0,
+        "unavailable": 35
+      }
+    },
+    "job_000010": {
+      "site": "Rwanda",
+      "frame_count": 400,
+      "calibration_frame_count": 60,
+      "monitoring_frame_count": 340,
+      "available_monitoring_frames": 337,
+      "monitoring_coverage": 0.9911764705882353,
+      "maximum_risk_index": 42.16774366015721,
+      "first_alert_seconds": {
+        "watch": 13.771840277777779,
+        "warning": null,
+        "critical": null
+      },
+      "alert_frame_counts": {
+        "normal": 321,
+        "watch": 16,
+        "warning": 0,
+        "critical": 0,
+        "unavailable": 3
+      }
+    },
+    "job_000011": {
+      "site": "Rwanda",
+      "frame_count": 400,
+      "calibration_frame_count": 60,
+      "monitoring_frame_count": 340,
+      "available_monitoring_frames": 340,
+      "monitoring_coverage": 1.0,
+      "maximum_risk_index": 51.677395921971154,
+      "first_alert_seconds": {
+        "watch": 3.45104815498155,
+        "warning": null,
+        "critical": null
+      },
+      "alert_frame_counts": {
+        "normal": 321,
+        "watch": 19,
+        "warning": 0,
+        "critical": 0,
+        "unavailable": 0
+      }
+    }
+  },
+  "source_feature_csv": "artifacts/nestler-features/frame_features.csv",
+  "config": {
+    "calibration": {
+      "frames": 60,
+      "minimum_samples": 20,
+      "minimum_scale_ratio": 0.05,
+      "saturation_iqr": 3.0
+    },
+    "quality": {
+      "minimum_valid_evidence": 4
+    },
+    "risk": {
+      "smoothing_alpha": 0.12,
+      "watch_threshold": 40.0,
+      "warning_threshold": 60.0,
+      "critical_threshold": 80.0,
+      "release_margin": 5.0
+    }
+  }
+}

@@ -1,0 +1,1 @@
+"""Integrated PileGuard demonstration pipeline."""

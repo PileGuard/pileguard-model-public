@@ -1,0 +1,20 @@
+[data]
+dataset_path = "extracted/nestler_v1/poultry_behaviour_dataset/chickens"
+job_pattern = "job_*"
+video_pattern = "job_*_400frames.mp4"
+annotation_pattern = "annotations_*.json"
+
+[features]
+resize_width = 480
+resize_height = 270
+grid_rows = 4
+grid_columns = 4
+flow_pyramid_scale = 0.5
+flow_levels = 3
+flow_window_size = 15
+flow_iterations = 3
+flow_poly_n = 5
+flow_poly_sigma = 1.2
+
+[output]
+artifact_dir = "artifacts/nestler-features"

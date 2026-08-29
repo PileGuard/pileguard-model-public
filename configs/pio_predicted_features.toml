@@ -1,0 +1,30 @@
+[data]
+dataset_path = "extracted/pio_v1/data"
+splits = ["val"]
+
+[model]
+weights = "weights/pio-yolo26n/best.pt"
+image_size = 480
+batch_size = 4
+device = "auto"
+
+[inference]
+confidence_threshold = 0.25
+confidence_by_week = {"1" = 0.15, "2" = 0.20, "3" = 0.20, "4" = 0.25, "5" = 0.25, "6" = 0.25}
+iou_threshold = 0.7
+max_detections = 1500
+
+[threshold_selection]
+split = "val"
+objective = "minimum week-stratified object-count MAE among tested settings"
+candidate_image_sizes = [320, 480]
+candidate_thresholds = [0.15, 0.20, 0.25]
+independent_test = false
+
+[features]
+expected_class_id = 0
+grid_rows = 4
+grid_columns = 4
+
+[output]
+artifact_dir = "artifacts/pio-predicted-features"

@@ -1,0 +1,31 @@
+[data]
+dataset_path = "extracted/pio_v1/data"
+train_split = "train"
+validation_split = "val"
+class_names = ["chicken"]
+
+[model]
+architecture = "yolo26n.yaml"
+pretrained_weights = "yolo26n.pt"
+
+[training]
+epochs = 5
+image_size = 320
+batch_size = 4
+workers = 0
+patience = 7
+seed = 2026
+device = "auto"
+max_detections = 1500
+close_mosaic = 5
+
+[evaluation]
+confidence_threshold = 0.001
+iou_threshold = 0.7
+max_detections = 1500
+grouped = true
+
+[output]
+run_root = "outputs/pio-yolo26n"
+artifact_dir = "artifacts/pio-yolo26n"
+checkpoint_dir = "weights/pio-yolo26n"

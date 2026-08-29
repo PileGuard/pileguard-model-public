@@ -1,0 +1,633 @@
+{
+  "image_count": 1487,
+  "source_annotations": 327288,
+  "valid_boxes": 327283,
+  "invalid_boxes": 5,
+  "clipped_boxes": 2889,
+  "feature_distributions": {
+    "object_count": {
+      "valid_count": 1487,
+      "mean": 220.09616677874916,
+      "p50": 179.0,
+      "p95": 558.1000000000006,
+      "max": 1151.0
+    },
+    "bbox_area_ratio": {
+      "valid_count": 1487,
+      "mean": 0.4099339661867402,
+      "p50": 0.3744017197320001,
+      "p95": 0.9426058286317001,
+      "max": 1.22415725295
+    },
+    "center_spread": {
+      "valid_count": 1487,
+      "mean": 0.37799499012302795,
+      "p50": 0.41921357801023157,
+      "p95": 0.47673198286429963,
+      "max": 0.5299920010309073
+    },
+    "mean_nearest_neighbor_distance": {
+      "valid_count": 1486,
+      "mean": 0.04023845048174638,
+      "p50": 0.03658279755007376,
+      "p95": 0.06143047049376176,
+      "max": 0.9882226787202366
+    },
+    "max_grid_fraction": {
+      "valid_count": 1487,
+      "mean": 0.18340107308138084,
+      "p50": 0.14838709677419354,
+      "p95": 0.36940993788819876,
+      "max": 1.0
+    }
+  },
+  "splits": {
+    "train": {
+      "image_count": 1035,
+      "source_annotations": 253429,
+      "valid_boxes": 253426,
+      "invalid_boxes": 3,
+      "clipped_boxes": 2122,
+      "feature_distributions": {
+        "object_count": {
+          "valid_count": 1035,
+          "mean": 244.85603864734298,
+          "p50": 211.0,
+          "p95": 644.6999999999996,
+          "max": 1151.0
+        },
+        "bbox_area_ratio": {
+          "valid_count": 1035,
+          "mean": 0.42827661161341735,
+          "p50": 0.39662445839899996,
+          "p95": 0.94441650407805,
+          "max": 1.22415725295
+        },
+        "center_spread": {
+          "valid_count": 1035,
+          "mean": 0.38545440216477034,
+          "p50": 0.42439830051982164,
+          "p95": 0.4754689289623099,
+          "max": 0.5123498603641548
+        },
+        "mean_nearest_neighbor_distance": {
+          "valid_count": 1034,
+          "mean": 0.03939413761675374,
+          "p50": 0.0353180676972384,
+          "p95": 0.06064184835996882,
+          "max": 0.9882226787202366
+        },
+        "max_grid_fraction": {
+          "valid_count": 1035,
+          "mean": 0.1766806006790835,
+          "p50": 0.1405152224824356,
+          "p95": 0.36147358665430956,
+          "max": 1.0
+        }
+      }
+    },
+    "val": {
+      "image_count": 452,
+      "source_annotations": 73859,
+      "valid_boxes": 73857,
+      "invalid_boxes": 2,
+      "clipped_boxes": 767,
+      "feature_distributions": {
+        "object_count": {
+          "valid_count": 452,
+          "mean": 163.4004424778761,
+          "p50": 115.0,
+          "p95": 394.0,
+          "max": 594.0
+        },
+        "bbox_area_ratio": {
+          "valid_count": 452,
+          "mean": 0.3679325546455661,
+          "p50": 0.2664687446995,
+          "p95": 0.936561836024025,
+          "max": 0.995382082128
+        },
+        "center_spread": {
+          "valid_count": 452,
+          "mean": 0.3609142567973567,
+          "p50": 0.4074650971972995,
+          "p95": 0.479986648291618,
+          "max": 0.5299920010309073
+        },
+        "mean_nearest_neighbor_distance": {
+          "valid_count": 452,
+          "mean": 0.04216990955785787,
+          "p50": 0.03939900532457112,
+          "p95": 0.06304983029521566,
+          "max": 0.14694359526312867
+        },
+        "max_grid_fraction": {
+          "valid_count": 452,
+          "mean": 0.1987897654184996,
+          "p50": 0.17269457161543494,
+          "p95": 0.3862417411581811,
+          "max": 1.0
+        }
+      }
+    }
+  },
+  "environments": {
+    "commercial": {
+      "image_count": 1005,
+      "source_annotations": 292892,
+      "valid_boxes": 292888,
+      "invalid_boxes": 4,
+      "clipped_boxes": 2727,
+      "feature_distributions": {
+        "object_count": {
+          "valid_count": 1005,
+          "mean": 291.4308457711443,
+          "p50": 270.0,
+          "p95": 664.5999999999992,
+          "max": 1151.0
+        },
+        "bbox_area_ratio": {
+          "valid_count": 1005,
+          "mean": 0.5240684269180761,
+          "p50": 0.5012847543019998,
+          "p95": 0.9543865760753999,
+          "max": 1.22415725295
+        },
+        "center_spread": {
+          "valid_count": 1005,
+          "mean": 0.4365347636675773,
+          "p50": 0.4448078924750645,
+          "p95": 0.48120002372601556,
+          "max": 0.5299920010309073
+        },
+        "mean_nearest_neighbor_distance": {
+          "valid_count": 1004,
+          "mean": 0.03950732933452105,
+          "p50": 0.035133821556427955,
+          "p95": 0.06248218714451991,
+          "max": 0.9882226787202366
+        },
+        "max_grid_fraction": {
+          "valid_count": 1005,
+          "mean": 0.14516857454165336,
+          "p50": 0.12949640287769784,
+          "p95": 0.22913486005089057,
+          "max": 1.0
+        }
+      }
+    },
+    "prototype": {
+      "image_count": 463,
+      "source_annotations": 28540,
+      "valid_boxes": 28539,
+      "invalid_boxes": 1,
+      "clipped_boxes": 136,
+      "feature_distributions": {
+        "object_count": {
+          "valid_count": 463,
+          "mean": 61.639308855291574,
+          "p50": 55.0,
+          "p95": 93.0,
+          "max": 98.0
+        },
+        "bbox_area_ratio": {
+          "valid_count": 463,
+          "mean": 0.1543655779742578,
+          "p50": 0.16191299280549998,
+          "p95": 0.2617353271127,
+          "max": 0.31879664592999996
+        },
+        "center_spread": {
+          "valid_count": 463,
+          "mean": 0.24871045041354242,
+          "p50": 0.2696486302554025,
+          "p95": 0.3098746036559062,
+          "max": 0.33162630709372487
+        },
+        "mean_nearest_neighbor_distance": {
+          "valid_count": 463,
+          "mean": 0.04189930013876896,
+          "p50": 0.04556703470602831,
+          "p95": 0.059988584470478994,
+          "max": 0.09205330465352332
+        },
+        "max_grid_fraction": {
+          "valid_count": 463,
+          "mean": 0.2684297401149601,
+          "p50": 0.24,
+          "p95": 0.42094736842105257,
+          "max": 0.6
+        }
+      }
+    },
+    "unknown": {
+      "image_count": 19,
+      "source_annotations": 5856,
+      "valid_boxes": 5856,
+      "invalid_boxes": 0,
+      "clipped_boxes": 26,
+      "feature_distributions": {
+        "object_count": {
+          "valid_count": 19,
+          "mean": 308.2105263157895,
+          "p50": 248.0,
+          "p95": 590.3,
+          "max": 602.0
+        },
+        "bbox_area_ratio": {
+          "valid_count": 19,
+          "mean": 0.6006197928913158,
+          "p50": 0.458586728122,
+          "p95": 1.0584192866091,
+          "max": 1.100676942294
+        },
+        "center_spread": {
+          "valid_count": 19,
+          "mean": 0.4320091729240657,
+          "p50": 0.4431082296655024,
+          "p95": 0.4623067766124995,
+          "max": 0.465166667752508
+        },
+        "mean_nearest_neighbor_distance": {
+          "valid_count": 19,
+          "mean": 0.03840014735610262,
+          "p50": 0.0332072469388429,
+          "p95": 0.05306073155453615,
+          "max": 0.05911449523690911
+        },
+        "max_grid_fraction": {
+          "valid_count": 19,
+          "mean": 0.13368466233816367,
+          "p50": 0.12716763005780346,
+          "p95": 0.1729671854264688,
+          "max": 0.17592592592592593
+        }
+      }
+    }
+  },
+  "weeks": {
+    "1": {
+      "image_count": 289,
+      "source_annotations": 86951,
+      "valid_boxes": 86951,
+      "invalid_boxes": 0,
+      "clipped_boxes": 503,
+      "feature_distributions": {
+        "object_count": {
+          "valid_count": 289,
+          "mean": 300.86851211072667,
+          "p50": 147.0,
+          "p95": 875.5999999999998,
+          "max": 1151.0
+        },
+        "bbox_area_ratio": {
+          "valid_count": 289,
+          "mean": 0.17872193226383717,
+          "p50": 0.09664605667400009,
+          "p95": 0.4874867575038995,
+          "max": 0.622539283029
+        },
+        "center_spread": {
+          "valid_count": 289,
+          "mean": 0.3146461117463448,
+          "p50": 0.38035346642891693,
+          "p95": 0.47672819128011723,
+          "max": 0.4974739706987765
+        },
+        "mean_nearest_neighbor_distance": {
+          "valid_count": 289,
+          "mean": 0.024729633044324666,
+          "p50": 0.0236169431233613,
+          "p95": 0.03287516285128989,
+          "max": 0.06463474814842814
+        },
+        "max_grid_fraction": {
+          "valid_count": 289,
+          "mean": 0.24481919131938143,
+          "p50": 0.21008403361344538,
+          "p95": 0.43209302325581384,
+          "max": 0.5483870967741935
+        }
+      }
+    },
+    "2": {
+      "image_count": 307,
+      "source_annotations": 97390,
+      "valid_boxes": 97389,
+      "invalid_boxes": 1,
+      "clipped_boxes": 716,
+      "feature_distributions": {
+        "object_count": {
+          "valid_count": 307,
+          "mean": 317.22801302931595,
+          "p50": 331.0,
+          "p95": 548.4,
+          "max": 703.0
+        },
+        "bbox_area_ratio": {
+          "valid_count": 307,
+          "mean": 0.3565332491344714,
+          "p50": 0.3811051222514999,
+          "p95": 0.5814399038952,
+          "max": 0.703192212586
+        },
+        "center_spread": {
+          "valid_count": 307,
+          "mean": 0.4089234717465817,
+          "p50": 0.42745373530447855,
+          "p95": 0.46947394416971755,
+          "max": 0.5299920010309073
+        },
+        "mean_nearest_neighbor_distance": {
+          "valid_count": 307,
+          "mean": 0.03145537240927163,
+          "p50": 0.030989971205074986,
+          "p95": 0.03832240777690361,
+          "max": 0.05747389602371841
+        },
+        "max_grid_fraction": {
+          "valid_count": 307,
+          "mean": 0.1621134745234683,
+          "p50": 0.13924050632911392,
+          "p95": 0.2857142857142857,
+          "max": 0.5555555555555556
+        }
+      }
+    },
+    "3": {
+      "image_count": 251,
+      "source_annotations": 55218,
+      "valid_boxes": 55215,
+      "invalid_boxes": 3,
+      "clipped_boxes": 576,
+      "feature_distributions": {
+        "object_count": {
+          "valid_count": 251,
+          "mean": 219.9800796812749,
+          "p50": 259.0,
+          "p95": 361.0,
+          "max": 450.0
+        },
+        "bbox_area_ratio": {
+          "valid_count": 251,
+          "mean": 0.3990233690815739,
+          "p50": 0.445632464526,
+          "p95": 0.6175562793092501,
+          "max": 0.6906110962985001
+        },
+        "center_spread": {
+          "valid_count": 251,
+          "mean": 0.408302645414311,
+          "p50": 0.45110180472392475,
+          "p95": 0.486897150375409,
+          "max": 0.5125977727516716
+        },
+        "mean_nearest_neighbor_distance": {
+          "valid_count": 251,
+          "mean": 0.0382307501982104,
+          "p50": 0.03574989419048182,
+          "p95": 0.05571695751207522,
+          "max": 0.07565989733893728
+        },
+        "max_grid_fraction": {
+          "valid_count": 251,
+          "mean": 0.16520350752869747,
+          "p50": 0.1345565749235474,
+          "p95": 0.3059246954595792,
+          "max": 0.4166666666666667
+        }
+      }
+    },
+    "4": {
+      "image_count": 318,
+      "source_annotations": 50039,
+      "valid_boxes": 50039,
+      "invalid_boxes": 0,
+      "clipped_boxes": 615,
+      "feature_distributions": {
+        "object_count": {
+          "valid_count": 318,
+          "mean": 157.35534591194968,
+          "p50": 187.0,
+          "p95": 300.0,
+          "max": 357.0
+        },
+        "bbox_area_ratio": {
+          "valid_count": 318,
+          "mean": 0.5007248222930503,
+          "p50": 0.503142039339,
+          "p95": 0.9573684969378499,
+          "max": 1.012905045792
+        },
+        "center_spread": {
+          "valid_count": 318,
+          "mean": 0.3701942794769476,
+          "p50": 0.4132499445741757,
+          "p95": 0.47409726338003233,
+          "max": 0.49343122252918886
+        },
+        "mean_nearest_neighbor_distance": {
+          "valid_count": 318,
+          "mean": 0.04516587403930927,
+          "p50": 0.043884617622464775,
+          "p95": 0.058632294649676495,
+          "max": 0.07138650925051
+        },
+        "max_grid_fraction": {
+          "valid_count": 318,
+          "mean": 0.17240359211856301,
+          "p50": 0.1490543465876723,
+          "p95": 0.29203431372549016,
+          "max": 0.4482758620689655
+        }
+      }
+    },
+    "5": {
+      "image_count": 55,
+      "source_annotations": 3739,
+      "valid_boxes": 3739,
+      "invalid_boxes": 0,
+      "clipped_boxes": 23,
+      "feature_distributions": {
+        "object_count": {
+          "valid_count": 55,
+          "mean": 67.98181818181818,
+          "p50": 54.0,
+          "p95": 129.99999999999991,
+          "max": 167.0
+        },
+        "bbox_area_ratio": {
+          "valid_count": 55,
+          "mean": 0.3382147886441501,
+          "p50": 0.2556492067035,
+          "p95": 0.6624993591452999,
+          "max": 0.8208725560550001
+        },
+        "center_spread": {
+          "valid_count": 55,
+          "mean": 0.3139412718344035,
+          "p50": 0.287147591732031,
+          "p95": 0.4164136953414158,
+          "max": 0.4313017463142604
+        },
+        "mean_nearest_neighbor_distance": {
+          "valid_count": 55,
+          "mean": 0.05188322274692912,
+          "p50": 0.050860780814288624,
+          "p95": 0.06245853565655164,
+          "max": 0.06308198477811391
+        },
+        "max_grid_fraction": {
+          "valid_count": 55,
+          "mean": 0.19747697575807252,
+          "p50": 0.18867924528301888,
+          "p95": 0.2768243785084202,
+          "max": 0.33962264150943394
+        }
+      }
+    },
+    "6": {
+      "image_count": 248,
+      "source_annotations": 28095,
+      "valid_boxes": 28094,
+      "invalid_boxes": 1,
+      "clipped_boxes": 430,
+      "feature_distributions": {
+        "object_count": {
+          "valid_count": 248,
+          "mean": 113.28225806451613,
+          "p50": 123.5,
+          "p95": 186.94999999999993,
+          "max": 242.0
+        },
+        "bbox_area_ratio": {
+          "valid_count": 248,
+          "mean": 0.6413972308150118,
+          "p50": 0.72523378860525,
+          "p95": 1.0196131176782748,
+          "max": 1.22415725295
+        },
+        "center_spread": {
+          "valid_count": 248,
+          "mean": 0.4029259237215219,
+          "p50": 0.4310803947996762,
+          "p95": 0.47033088887589436,
+          "max": 0.4988684644693643
+        },
+        "mean_nearest_neighbor_distance": {
+          "valid_count": 247,
+          "mean": 0.06254586170575178,
+          "p50": 0.053404611187260295,
+          "p95": 0.08833364550585585,
+          "max": 0.9882226787202366
+        },
+        "max_grid_fraction": {
+          "valid_count": 248,
+          "mean": 0.17138769261081468,
+          "p50": 0.13288023843930635,
+          "p95": 0.32866666666666633,
+          "max": 1.0
+        }
+      }
+    }
+  },
+  "metadata_counts": {
+    "environment": {
+      "commercial": 1005,
+      "unknown": 19,
+      "prototype": 463
+    },
+    "week": {
+      "1": 289,
+      "2": 307,
+      "3": 251,
+      "4": 318,
+      "5": 55,
+      "6": 248,
+      "None": 19
+    }
+  },
+  "top_crowded_images": [
+    {
+      "image_id": "C-W1-0061",
+      "split": "train",
+      "environment": "commercial",
+      "week": 1,
+      "object_count": 1151,
+      "bbox_area_ratio": 0.5593615736105
+    },
+    {
+      "image_id": "C-W1-0016",
+      "split": "train",
+      "environment": "commercial",
+      "week": 1,
+      "object_count": 981,
+      "bbox_area_ratio": 0.5500205416180001
+    },
+    {
+      "image_id": "C-W1-0017",
+      "split": "train",
+      "environment": "commercial",
+      "week": 1,
+      "object_count": 977,
+      "bbox_area_ratio": 0.5305265069230001
+    },
+    {
+      "image_id": "C-W1-0014",
+      "split": "train",
+      "environment": "commercial",
+      "week": 1,
+      "object_count": 973,
+      "bbox_area_ratio": 0.52106439444
+    },
+    {
+      "image_id": "C-W1-0020",
+      "split": "train",
+      "environment": "commercial",
+      "week": 1,
+      "object_count": 963,
+      "bbox_area_ratio": 0.527497725337
+    },
+    {
+      "image_id": "C-W1-0015",
+      "split": "train",
+      "environment": "commercial",
+      "week": 1,
+      "object_count": 956,
+      "bbox_area_ratio": 0.510435124284
+    },
+    {
+      "image_id": "C-W1-0063",
+      "split": "train",
+      "environment": "commercial",
+      "week": 1,
+      "object_count": 947,
+      "bbox_area_ratio": 0.4623051724615
+    },
+    {
+      "image_id": "C-W1-0018",
+      "split": "train",
+      "environment": "commercial",
+      "week": 1,
+      "object_count": 941,
+      "bbox_area_ratio": 0.512116167785
+    },
+    {
+      "image_id": "C-W1-0013",
+      "split": "train",
+      "environment": "commercial",
+      "week": 1,
+      "object_count": 927,
+      "bbox_area_ratio": 0.49284997778500006
+    },
+    {
+      "image_id": "C-W1-0072",
+      "split": "train",
+      "environment": "commercial",
+      "week": 1,
+      "object_count": 923,
+      "bbox_area_ratio": 0.401713851438
+    }
+  ],
+  "claim_boundary": "PIO contains broiler detection boxes but no Piling event labels; these values validate static density-feature extraction only."
+}
